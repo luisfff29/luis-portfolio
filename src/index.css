@@ -8,10 +8,15 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px !important;
   font-family: "Open Sans", sans-serif;
 }
 
 body {
   line-height: 30px;
+  background-color: rgb(32, 35, 36) !important;
+}
+
+.rows {
+  padding: 5em 0;
 }

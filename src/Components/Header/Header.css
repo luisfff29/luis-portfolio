@@ -1,6 +1,6 @@
 header {
   position: relative;
-  height: 850px;
+  height: 800px;
   min-height: 500px;
   width: 100%;
   background: #161415 url(../../images/jakob-korber-Xnz6Iq3BUbE-unsplash.jpg)
@@ -13,6 +13,7 @@ header {
 
 .menu {
   margin: 0 auto !important;
+  font-size: 1em !important;
 }
 
 .banner {
@@ -23,6 +24,7 @@ header {
   padding: 30px;
   width: 100%;
   text-align: center;
+  font-size: inherit;
 }
 
 .banner-text h1 {
@@ -34,7 +36,7 @@ header {
 .banner-text h3 {
   font-family: "Libre Baskerville", serif;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 2em;
   color: rgb(216, 216, 216);
   margin: 0 auto;
   width: 60%;
@@ -43,6 +45,7 @@ header {
 
 .social {
   padding: 1em;
+  font-size: 2em;
 }
 
 .social li {
@@ -55,18 +58,18 @@ header {
 
 @media only screen and (max-width: 900px) {
   .banner {
-    font-size: 12px;
+    font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .banner {
-    font-size: 10px;
+    font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .banner {
-    font-size: 8px;
+    font-size: 0.7em;
   }
 }
