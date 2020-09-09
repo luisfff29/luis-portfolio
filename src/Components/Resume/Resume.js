@@ -4,6 +4,19 @@ import "./Resume.css";
 
 class Resume extends Component {
   render() {
+    function bar(name, icon, percentage, color) {
+      if (icon === "dj") {
+        icon = "dj";
+      } else {
+        icon = <Icon name={icon} />;
+      }
+      return (
+        <Progress percent={percentage} color={color} active inverted progress>
+          {icon} {name}
+        </Progress>
+      );
+    }
+
     return (
       <section id="resume">
         <div className="Row">
@@ -75,33 +88,13 @@ class Resume extends Component {
                 </h4>
               </Grid.Column>
               <Grid.Column width={13}>
-                <Progress percent={100} color="blue" active inverted progress>
-                  <Icon name="python" />
-                  Python
-                </Progress>
-                <Progress percent={95} color="yellow" active inverted progress>
-                  <Icon name="js" />
-                  Javascript
-                </Progress>
-                <Progress percent={100} color="green" active inverted progress>
-                  dj Django
-                </Progress>
-                <Progress percent={95} color="violet" active inverted progress>
-                  <Icon name="react" />
-                  React
-                </Progress>
-                <Progress percent={100} color="red" active inverted progress>
-                  <Icon name="html5" />
-                  HTML5
-                </Progress>
-                <Progress percent={90} color="blue" active inverted progress>
-                  <Icon name="css3" />
-                  CSS3
-                </Progress>
-                <Progress percent={95} color="grey" active inverted progress>
-                  <Icon name="git" />
-                  Git
-                </Progress>
+                {bar("Python", "python", 100, "blue")}
+                {bar("Javascript", "js", 95, "yellow")}
+                {bar("Django", "dj", 100, "green")}
+                {bar("React", "react", 95, "violet")}
+                {bar("HTML5", "html5", 100, "red")}
+                {bar("CSS3", "css3", 90, "blue")}
+                {bar("Git", "git", 95, "grey")}
               </Grid.Column>
             </Grid.Row>
           </Grid>
