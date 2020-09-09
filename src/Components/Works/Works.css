@@ -11,7 +11,7 @@
   left: 1rem;
   width: 88%;
   height: 84%;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -27,13 +27,23 @@
   padding: 0 !important;
 }
 
+.Project .buttons a {
+  font-size: 14px !important;
+}
+
 @media only screen and (max-width: 991px) {
   .Project {
+    padding: 1rem;
     width: 94%;
     height: 92%;
   }
 
+  .Project .buttons a {
+    font-size: 1rem !important;
+  }
+
   .Project > * {
-    transform: translateY(200%);
+    /* transform: translateY(100%); */
+    font-size: 1.8rem;
   }
 }

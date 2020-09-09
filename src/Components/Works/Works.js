@@ -8,16 +8,23 @@ import "./Works.css";
 
 class Works extends Component {
   render() {
-    function project(image, title, framework, url) {
+    function project(image, title, framework, url_website, url_github) {
       return (
         <Grid.Column mobile={16} tablet={8} computer={4} className="Container">
           <Image fluid src={image} />
           <div className="Project">
-            <h3>{title}</h3>
+            <h5>
+              <u>{title}</u>
+            </h5>
             <p>{framework}</p>
-            <Button color="teal" as="a" href={url} target="_blank">
-              Check project
-            </Button>
+            <Button.Group vertical>
+              <Button color="teal" as="a" href={url_website} target="_blank">
+                Check website
+              </Button>
+              <Button color="grey" as="a" href={url_github} target="_blank">
+                Check repository
+              </Button>
+            </Button.Group>
           </div>
         </Grid.Column>
       );
@@ -31,25 +38,29 @@ class Works extends Component {
               Project_Kenziegram,
               "KenzieGram",
               "Node.js",
-              "https://super-kenziegram.herokuapp.com/"
+              "https://super-kenziegram.herokuapp.com/",
+              "https://github.com/luisfff29/super-kenziegram/"
             )}
             {project(
               Project_Signup_Form,
               "Signup Form",
               "Node.js",
-              "https://signup-form-app.herokuapp.com/"
+              "https://signup-form-app.herokuapp.com/",
+              "https://github.com/luisfff29/signup-form/"
             )}
             {project(
               Project_Kwitter,
               "Kwitter",
               "React.js",
-              "https://kwitter-frontend.herokuapp.com/"
+              "https://kwitter-frontend.herokuapp.com/",
+              "https://github.com/luisfff29/kwitter-frontend/"
             )}
             {project(
               Project_Overdrive,
               "Overdrive Library",
               "Django",
-              "https://django-overdrive.com/"
+              "https://django-overdrive.com/",
+              "https://github.com/luisfff29/overdrive-library/"
             )}
           </Grid>
         </div>
