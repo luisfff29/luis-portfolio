@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Grid, Container, Progress, Icon } from "semantic-ui-react";
+import { Grid, Progress, Icon } from "semantic-ui-react";
 import "./Resume.css";
 
 class Resume extends Component {
   render() {
     return (
       <section id="resume">
-        <Container text className="rows">
+        <div className="Row">
           <Grid stackable divided="vertically">
             <Grid.Row columns={2} stretched>
               <Grid.Column width={3}>
@@ -105,7 +105,7 @@ class Resume extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Container>
+        </div>
       </section>
     );
   }

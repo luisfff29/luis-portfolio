@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Image, Container, Button, Icon } from "semantic-ui-react";
+import { Grid, Image, Button, Icon } from "semantic-ui-react";
 import Picture from "../../images/profile.png";
 import MyResume from "../../documents/LF_resume.pdf";
 import "./About.css";
@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <section id="about">
-        <Container text className="rows">
+        <div className="Row">
           <Grid stackable>
             <Grid.Row>
               <Grid.Column width={4}>
@@ -40,7 +40,7 @@ class About extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Container>
+        </div>
       </section>
     );
   }

@@ -13,7 +13,7 @@ header {
 
 .menu {
   margin: 0 auto !important;
-  font-size: 1em !important;
+  font-size: 0.9em !important;
   letter-spacing: 3px;
 }
 
@@ -22,22 +22,23 @@ header {
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;
-  padding: 30px;
   width: 100%;
   text-align: center;
   font-size: inherit;
 }
 
 .banner-text h1 {
-  font-size: 6.6em;
-  margin: 0 auto 18px auto;
+  width: 85%;
+  font-size: 5.5em;
+  margin: 0 auto;
+  margin-bottom: 18px;
   text-shadow: 0 1px 3px rgb(0, 0, 0, 0.8);
 }
 
 .banner-text h3 {
   font-family: "Libre Baskerville", serif;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.4em;
   color: rgb(216, 216, 216);
   margin: 0 auto;
   width: 60%;
@@ -46,12 +47,18 @@ header {
 
 .social {
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .social li {
   display: inline;
   padding: 0.5em;
+}
+
+#arrow_down {
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(-20px);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -61,16 +68,28 @@ header {
   .banner {
     font-size: 0.9em;
   }
+
+  .banner-text h1 {
+    font-size: 5em;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .banner {
     font-size: 0.8em;
   }
+
+  .banner-text h1 {
+    font-size: 4em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .banner {
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+
+  .banner-text h1 {
+    font-size: 3em;
   }
 }

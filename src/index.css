@@ -7,8 +7,9 @@
   color: #fff;
 }
 
-html {
-  font-size: 16px !important;
+html,
+body {
+  font-size: 18px !important;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -17,6 +18,35 @@ body {
   background-color: rgb(32, 35, 36) !important;
 }
 
-.rows {
-  padding: 5em 0;
+.Row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 900px) {
+  section {
+    padding-top: 96px;
+    padding-bottom: 66px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Row {
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Row {
+    width: auto;
+  }
 }

@@ -38,6 +38,9 @@ class Header extends Component {
             </ul>
           </div>
         </div>
+        <a href="#about">
+          <Icon name="chevron circle down" size="big" id="arrow_down" />
+        </a>
       </header>
     );
   }
