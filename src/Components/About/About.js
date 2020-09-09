@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Grid, Image, Container, Button, Responsive } from "semantic-ui-react";
+import { Grid, Image, Container, Button, Icon } from "semantic-ui-react";
 import Picture from "../../images/profile.png";
+import MyResume from "../../documents/LF_resume.pdf";
 import "./About.css";
 
 class About extends Component {
@@ -11,7 +12,7 @@ class About extends Component {
           <Grid stackable>
             <Grid.Row>
               <Grid.Column width={4}>
-                <Image src={Picture} size="medium" fluid centered circular />
+                <Image src={Picture} size="medium" centered circular />
               </Grid.Column>
               <Grid.Column width={12}>
                 <div id="aboutMe">
@@ -33,14 +34,9 @@ class About extends Component {
                 <p>luisfff29@gmail.com</p>
               </Grid.Column>
               <Grid.Column width={6}>
-                <a href="https://docs.google.com/document/d/1IOlHH50MSvf5EsfdLWzZzfOZOJ33MDyBQF7gZTepQd0">
-                  <Button
-                    content="Resume Online"
-                    icon="download"
-                    size="large"
-                    color="grey"
-                  />
-                </a>
+                <Button as="a" href={MyResume} target="_blank" color="grey">
+                  <Icon name="download" /> Resume Online
+                </Button>
               </Grid.Column>
             </Grid.Row>
           </Grid>

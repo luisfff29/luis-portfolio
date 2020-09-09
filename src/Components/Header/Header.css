@@ -1,6 +1,6 @@
 header {
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
   background: #161415 url(../../images/jakob-korber-Xnz6Iq3BUbE-unsplash.jpg)
@@ -14,6 +14,7 @@ header {
 .menu {
   margin: 0 auto !important;
   font-size: 1em !important;
+  letter-spacing: 3px;
 }
 
 .banner {
