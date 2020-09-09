@@ -1,0 +1,39 @@
+#works h2 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.Project {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 88%;
+  height: 84%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Container .Project {
+  display: none;
+}
+
+.Container:hover .Project {
+  display: block;
+}
+
+.Project h3 {
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .Project {
+    width: 94%;
+    height: 92%;
+  }
+
+  .Project > * {
+    transform: translateY(200%);
+  }
+}
