@@ -45,20 +45,15 @@ header {
   padding-bottom: 1em;
 }
 
-.social {
-  padding: 1em;
-  font-size: 1.3em;
-}
-
-.social li {
-  display: inline;
-  padding: 0.5em;
-}
-
 #arrow_down {
   position: absolute;
   bottom: 2rem;
   transform: translateX(-20px);
+  transition: all 0.5s ease-in-out;
+}
+
+#arrow_down:hover {
+  transform: scale(1.5) perspective(1px) translate(-12.5px);
 }
 
 @media only screen and (max-width: 1024px) {

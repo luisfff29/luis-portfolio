@@ -2,6 +2,21 @@
   background-color: rgb(54, 59, 61);
 }
 
+.contactTitle h3 {
+  display: none;
+  margin: 0 auto;
+  letter-spacing: 4px;
+}
+
+.contactTitle i {
+  padding-left: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.contactTitle i:hover {
+  transform: scale(1.2);
+}
+
 .ui.input {
   width: 100%;
 }
@@ -30,6 +45,13 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .contactTitle h3 {
+    display: block;
+  }
+
+  .contactTitle i {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {

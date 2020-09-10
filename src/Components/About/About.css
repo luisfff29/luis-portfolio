@@ -3,6 +3,14 @@
   font-size: 1em;
 }
 
+#about a {
+  transition: all 0.5s ease-in-out;
+}
+
+#about a:hover {
+  transform: scale(1.1) !important;
+}
+
 @media only screen and (max-width: 1024px) {
 }
 

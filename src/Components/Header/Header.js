@@ -5,7 +5,7 @@ import "./Header.css";
 class Header extends Component {
   render() {
     return (
-      <header id="#home">
+      <header id="home">
         <Segment className="menu" inverted>
           <Menu inverted pointing secondary>
             <Menu.Item name="HOME" active />

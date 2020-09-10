@@ -8,8 +8,9 @@ class Contact extends Component {
       <section id="contact">
         <div className="Row">
           <Grid stackable divided="vertically">
-            <Grid.Row>
+            <Grid.Row className="contactTitle">
               <Icon name="mail" size="huge" />
+              <h3>GET IN TOUCH.</h3>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column width={12}>
@@ -65,7 +66,7 @@ class Contact extends Component {
                 <h2>Contact me</h2>
                 <p>Luis Fuentes</p>
                 <p>Wylie, TX - 75098</p>
-                <p>(214)-721-2378)</p>
+                <p>(214)-721-2378</p>
                 <p>luisfff29@gmail.com</p>
               </Grid.Column>
             </Grid.Row>

@@ -34,8 +34,14 @@ class About extends Component {
                 <p>luisfff29@gmail.com</p>
               </Grid.Column>
               <Grid.Column width={6}>
-                <Button as="a" href={MyResume} target="_blank" color="grey">
-                  <Icon name="download" /> Resume Online
+                <Button
+                  as="a"
+                  href={MyResume}
+                  fluid
+                  target="_blank"
+                  color="grey"
+                >
+                  <Icon name="download" /> Open Resume
                 </Button>
               </Grid.Column>
             </Grid.Row>
