@@ -11,10 +11,18 @@ header {
   overflow: hidden;
 }
 
+.Navbar div {
+  display: flex;
+  margin: 0 auto;
+}
+
 .menu {
-  margin: 0 auto !important;
+  width: 100%;
+  z-index: 100;
   font-size: 0.9em !important;
   letter-spacing: 3px;
+  position: fixed;
+  background: transparent;
 }
 
 .banner {

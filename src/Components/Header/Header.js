@@ -1,20 +1,45 @@
 import React, { Component } from "react";
-import { Menu, Segment, Icon } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 import "./Header.css";
 
 class Header extends Component {
   render() {
+    window.onscroll = function () {
+      myFunction();
+    };
+    function myFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        console.log("Azucar");
+      } else {
+        console.log("salado");
+      }
+    }
     return (
       <header id="home">
-        <Segment className="menu" inverted>
+        <div className="Navbar">
           <Menu inverted pointing secondary>
-            <Menu.Item name="HOME" active />
-            <Menu.Item name="ABOUT" />
-            <Menu.Item name="RESUME" />
-            <Menu.Item name="WORKS" />
-            <Menu.Item name="CONTACT" />
+            <div>
+              <a href="#home">
+                <Menu.Item name="HOME" active />
+              </a>
+              <a href="#about">
+                <Menu.Item name="ABOUT" />
+              </a>
+              <a href="#resume">
+                <Menu.Item name="RESUME" />
+              </a>
+              <a href="#works">
+                <Menu.Item name="WORKS" />
+              </a>
+              <a href="#contact">
+                <Menu.Item name="CONTACT" />
+              </a>
+            </div>
           </Menu>
-        </Segment>
+        </div>
 
         <div className="banner">
           <div className="banner-text">
