@@ -4,6 +4,7 @@ import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
 import Works from "./Components/Works/Works";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
       <Resume />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }

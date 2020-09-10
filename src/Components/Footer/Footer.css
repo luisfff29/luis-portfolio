@@ -1,0 +1,50 @@
+#footer {
+  padding-top: 60px !important;
+}
+
+.social {
+  text-align: center;
+}
+
+#arrow_up {
+  text-align: center;
+}
+
+#arrow_up i.icon {
+  position: absolute;
+  transform: translate(-20px, -75px);
+  transition: all 0.5s ease-in-out;
+}
+
+#arrow_up i.icon:hover {
+  transform: scale(1.5) perspective(1px) translate(-13px, -50px);
+}
+
+#credits {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#credits p {
+  color: rgb(175, 170, 162);
+}
+
+.copyright li {
+  display: inline;
+  color: rgb(175, 170, 162);
+}
+
+.copyright li::before {
+  content: "\2022";
+  padding-left: 10px;
+}
+
+.copyright li:first-child::before {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #credits {
+    width: 95%;
+  }
+}
