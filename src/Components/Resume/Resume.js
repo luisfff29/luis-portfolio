@@ -18,7 +18,7 @@ class Resume extends Component {
     }
 
     return (
-      <section id="resume">
+      <section id="resume" className="Section">
         <div className="Row">
           <Grid stackable divided="vertically">
             <Grid.Row columns={2} stretched>

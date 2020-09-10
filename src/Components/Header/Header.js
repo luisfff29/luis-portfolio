@@ -4,21 +4,8 @@ import "./Header.css";
 
 class Header extends Component {
   render() {
-    window.onscroll = function () {
-      myFunction();
-    };
-    function myFunction() {
-      if (
-        document.body.scrollTop > 50 ||
-        document.documentElement.scrollTop > 50
-      ) {
-        console.log("Azucar");
-      } else {
-        console.log("salado");
-      }
-    }
     return (
-      <header id="home">
+      <header id="home" className="Section">
         <div className="Navbar">
           <Menu inverted pointing secondary>
             <div>

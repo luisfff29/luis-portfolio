@@ -9,6 +9,30 @@ import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
 function App() {
+  /* Credits to Yago Estevez for ScrollSpy With Vanilla JS
+     link: https://codepen.io/yagoestevez/pen/VGBqJW */
+  const spyScrolling = () => {
+    const sections = document.getElementsByClassName("Section");
+    console.log(sections);
+
+    window.onscroll = () => {
+      const scrollPos =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      for (let s in sections)
+        if (
+          sections.hasOwnProperty(s) &&
+          sections[s].offsetTop <= scrollPos + 1
+        ) {
+          const id = sections[s].id;
+          document.querySelector(".active").classList.remove("active");
+          document
+            .querySelector(`a[href*=${id}]`)
+            .firstChild.classList.add("active");
+        }
+    };
+  };
+  spyScrolling();
+
   return (
     <div>
       <Header />

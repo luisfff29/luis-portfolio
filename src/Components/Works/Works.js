@@ -30,7 +30,7 @@ class Works extends Component {
       );
     }
     return (
-      <section id="works">
+      <section id="works" className="Section">
         <div className="Row">
           <h2>Check out some of my projects!</h2>
           <Grid>

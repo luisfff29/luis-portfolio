@@ -5,7 +5,7 @@ import "./Contact.css";
 class Contact extends Component {
   render() {
     return (
-      <section id="contact">
+      <section id="contact" className="Section">
         <div className="Row">
           <Grid stackable divided="vertically">
             <Grid.Row className="contactTitle">

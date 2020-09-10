@@ -7,7 +7,7 @@ import "./About.css";
 class About extends Component {
   render() {
     return (
-      <section id="about">
+      <section id="about" className="Section">
         <div className="Row">
           <Grid stackable>
             <Grid.Row>
