@@ -17,6 +17,10 @@
   transform: scale(1.2);
 }
 
+.asterisk {
+  color: rgb(0, 201, 201);
+}
+
 .ui.input {
   width: 100%;
 }
@@ -25,7 +29,6 @@
 .InputColor input {
   color: floralwhite !important;
   background-color: rgb(32, 35, 36) !important;
-  text-shadow: yellow !important;
 }
 
 .InputColor:focus,

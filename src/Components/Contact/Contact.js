@@ -17,7 +17,9 @@ class Contact extends Component {
                 <Grid stackable>
                   <Grid.Column width={4}>
                     <h4>
-                      <span>Name</span>
+                      <span>
+                        Name<span className="asterisk">*</span>
+                      </span>
                     </h4>
                   </Grid.Column>
                   <Grid.Column width={10}>
@@ -27,7 +29,21 @@ class Contact extends Component {
                 <Grid stackable>
                   <Grid.Column width={4}>
                     <h4>
-                      <span>Email</span>
+                      <span>
+                        Email<span className="asterisk">*</span>
+                      </span>
+                    </h4>
+                  </Grid.Column>
+                  <Grid.Column width={10}>
+                    <Input className="InputColor" type="email" />
+                  </Grid.Column>
+                </Grid>
+                <Grid stackable>
+                  <Grid.Column width={4}>
+                    <h4>
+                      <span>
+                        Subject<span className="asterisk">*</span>
+                      </span>
                     </h4>
                   </Grid.Column>
                   <Grid.Column width={10}>
@@ -37,17 +53,9 @@ class Contact extends Component {
                 <Grid stackable>
                   <Grid.Column width={4}>
                     <h4>
-                      <span>Subject</span>
-                    </h4>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Input className="InputColor" />
-                  </Grid.Column>
-                </Grid>
-                <Grid stackable>
-                  <Grid.Column width={4}>
-                    <h4>
-                      <span>Message</span>
+                      <span>
+                        Message<span className="asterisk">*</span>
+                      </span>
                     </h4>
                   </Grid.Column>
                   <Grid.Column width={10}>

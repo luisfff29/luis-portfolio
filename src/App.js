@@ -13,7 +13,6 @@ function App() {
      link: https://codepen.io/yagoestevez/pen/VGBqJW */
   const spyScrolling = () => {
     const sections = document.getElementsByClassName("Section");
-    console.log(sections);
 
     window.onscroll = () => {
       const scrollPos =
@@ -25,9 +24,7 @@ function App() {
         ) {
           const id = sections[s].id;
           document.querySelector(".active").classList.remove("active");
-          document
-            .querySelector(`a[href*=${id}]`)
-            .firstChild.classList.add("active");
+          document.querySelector(`a[href*=${id}]`).classList.add("active");
         }
     };
   };

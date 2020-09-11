@@ -13,7 +13,7 @@ header {
 
 .Navbar div {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .menu {
@@ -23,6 +23,22 @@ header {
   letter-spacing: 3px;
   position: fixed;
   background: transparent;
+}
+
+.Sidebar-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 150;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebarOpen {
+  transform: translateX(-165px) !important;
+}
+
+.Sidebar {
+  display: none;
 }
 
 .banner {
@@ -84,6 +100,14 @@ header {
 
   .banner-text h1 {
     font-size: 4em;
+  }
+
+  .Navbar {
+    display: none;
+  }
+
+  .Sidebar {
+    display: block;
   }
 }
 

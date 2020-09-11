@@ -1,31 +1,78 @@
 import React, { Component } from "react";
-import { Menu, Icon } from "semantic-ui-react";
+import { Menu, Icon, Sidebar, Button } from "semantic-ui-react";
 import "./Header.css";
 
 class Header extends Component {
+  state = { open: false };
+
+  sidebarClose = () => {
+    this.setState({ open: false });
+  };
+
+  handleSidebar = () => {
+    this.setState((prevState) => {
+      return { open: !prevState.open };
+    });
+  };
+
   render() {
+    let sidebarRight = "Sidebar-button";
+    if (this.state.open) {
+      sidebarRight = "Sidebar-button sidebarOpen";
+    }
+
     return (
       <header id="home" className="Section">
         <div className="Navbar">
-          <Menu inverted pointing secondary>
-            <div>
-              <a href="#home">
-                <Menu.Item name="HOME" active />
-              </a>
-              <a href="#about">
-                <Menu.Item name="ABOUT" />
-              </a>
-              <a href="#resume">
-                <Menu.Item name="RESUME" />
-              </a>
-              <a href="#works">
-                <Menu.Item name="WORKS" />
-              </a>
-              <a href="#contact">
-                <Menu.Item name="CONTACT" />
-              </a>
-            </div>
+          <Menu inverted pointing fixed="top" secondary>
+            <Menu.Item as="a" href="#home" name="HOME" active />
+            <Menu.Item as="a" href="#about" name="ABOUT" />
+            <Menu.Item as="a" href="#resume" name="RESUME" />
+            <Menu.Item as="a" href="#works" name="WORKS" />
+            <Menu.Item as="a" href="#contact" name="CONTACT" />
           </Menu>
+        </div>
+
+        <div className="Sidebar">
+          <Button
+            className={sidebarRight}
+            icon
+            onClick={this.handleSidebar}
+            color="black"
+          >
+            <Icon name="sidebar" size="big" />
+          </Button>
+
+          <Sidebar
+            as={Menu}
+            inverted
+            icon="labeled"
+            vertical
+            visible={this.state.open}
+            width="thin"
+            direction="right"
+          >
+            <Menu.Item as="a" href="#home" onClick={this.sidebarClose}>
+              <Icon name="home" />
+              HOME
+            </Menu.Item>
+            <Menu.Item as="a" href="#about" onClick={this.sidebarClose}>
+              <Icon name="user" />
+              ABOUT
+            </Menu.Item>
+            <Menu.Item as="a" href="#resume" onClick={this.sidebarClose}>
+              <Icon name="file alternate" />
+              RESUME
+            </Menu.Item>
+            <Menu.Item as="a" href="#works" onClick={this.sidebarClose}>
+              <Icon name="code" />
+              WORKS
+            </Menu.Item>
+            <Menu.Item as="a" href="#contact" onClick={this.sidebarClose}>
+              <Icon name="phone" />
+              CONTACT
+            </Menu.Item>
+          </Sidebar>
         </div>
 
         <div className="banner">
