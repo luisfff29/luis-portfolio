@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Image, Button } from "semantic-ui-react";
-import Project_Kwitter from "../../images/project_kwitter.png";
-import Project_Kenziegram from "../../images/project_kenziegram.png";
-import Project_Signup_Form from "../../images/project_signup_form.png";
-import Project_Overdrive from "../../images/project_overdrive.png";
 import "./Works.css";
 
 class Works extends Component {
@@ -35,28 +31,28 @@ class Works extends Component {
           <h2>Check out some of my projects!</h2>
           <Grid>
             {project(
-              Project_Kenziegram,
+              "images/project_kenziegram.png",
               "KenzieGram",
               "Node.js",
               "https://super-kenziegram.herokuapp.com/",
               "https://github.com/luisfff29/super-kenziegram/"
             )}
             {project(
-              Project_Signup_Form,
+              "images/project_signup_form.png",
               "Signup Form",
               "Node.js",
               "https://signup-form-app.herokuapp.com/",
               "https://github.com/luisfff29/signup-form/"
             )}
             {project(
-              Project_Kwitter,
+              "images/project_kwitter.png",
               "Kwitter",
               "React.js",
               "https://kwitter-frontend.herokuapp.com/",
               "https://github.com/luisfff29/kwitter-frontend/"
             )}
             {project(
-              Project_Overdrive,
+              "images/project_overdrive.png",
               "Overdrive Library",
               "Django",
               "https://django-overdrive.com/",

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Image, Button, Icon } from "semantic-ui-react";
-import Picture from "../../images/profile.png";
-import MyResume from "../../documents/LF_resume.pdf";
 import "./About.css";
 
 class About extends Component {
@@ -12,7 +10,12 @@ class About extends Component {
           <Grid stackable>
             <Grid.Row>
               <Grid.Column width={4}>
-                <Image src={Picture} size="medium" centered circular />
+                <Image
+                  src="images/profile_picture.png"
+                  size="medium"
+                  centered
+                  circular
+                />
               </Grid.Column>
               <Grid.Column width={12}>
                 <div id="aboutMe">
@@ -36,7 +39,7 @@ class About extends Component {
               <Grid.Column width={6}>
                 <Button
                   as="a"
-                  href={MyResume}
+                  href="documents/resume.pdf"
                   fluid
                   target="_blank"
                   color="grey"
