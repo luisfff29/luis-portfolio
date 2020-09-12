@@ -5,29 +5,11 @@ import Resume from "./Components/Resume/Resume";
 import Works from "./Components/Works/Works";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import spyScrolling from "./js/spyScrolling";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
 function App() {
-  /* Credits to Yago Estevez for ScrollSpy With Vanilla JS
-     link: https://codepen.io/yagoestevez/pen/VGBqJW */
-  const spyScrolling = () => {
-    const sections = document.getElementsByClassName("Section");
-
-    window.onscroll = () => {
-      const scrollPos =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      for (let s in sections)
-        if (
-          sections.hasOwnProperty(s) &&
-          sections[s].offsetTop <= scrollPos + 1
-        ) {
-          const id = sections[s].id;
-          document.querySelector(".active").classList.remove("active");
-          document.querySelector(`a[href*=${id}]`).classList.add("active");
-        }
-    };
-  };
   spyScrolling();
 
   return (
