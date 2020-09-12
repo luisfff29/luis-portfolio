@@ -100,6 +100,17 @@ class Header extends Component {
         <a href="#about">
           <Icon name="chevron circle down" size="big" id="arrow_down" />
         </a>
+        <span id="backgroundCredit">
+          Photo by{" "}
+          <a href="https://unsplash.com/@jakobkoerber?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+            Jakob Körber
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/s/photos/yosemite-dark?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+            {" "}
+            Unsplash
+          </a>
+        </span>
       </header>
     );
   }

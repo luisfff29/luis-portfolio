@@ -3,7 +3,8 @@ header {
   height: 100vh;
   min-height: 500px;
   width: 100%;
-  background: #161415 url(../../images/jakob-korber-Xnz6Iq3BUbE-unsplash.jpg)
+  background: #161415
+    url("http://127.0.0.1:3000/images/jakob-korber-Xnz6Iq3BUbE-unsplash.jpg")
     no-repeat top center;
   background-size: cover;
   -webkit-background-size: cover !important;
@@ -80,6 +81,15 @@ header {
   transform: scale(1.5) perspective(1px) translate(-12.5px);
 }
 
+#backgroundCredit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: rgb(177, 171, 161);
+}
+
 @media only screen and (max-width: 1024px) {
 }
 
@@ -118,5 +128,9 @@ header {
 
   .banner-text h1 {
     font-size: 3em;
+  }
+
+  #backgroundCredit {
+    padding: 0.6rem;
   }
 }
