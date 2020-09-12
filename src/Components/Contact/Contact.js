@@ -14,61 +14,61 @@ class Contact extends Component {
             </Grid.Row>
             <Grid.Row>
               <Grid.Column width={12}>
-                <Grid stackable>
-                  <Grid.Column width={4}>
-                    <h4>
-                      <span>
-                        Name<span className="asterisk">*</span>
-                      </span>
-                    </h4>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Input className="InputColor" />
-                  </Grid.Column>
-                </Grid>
-                <Grid stackable>
-                  <Grid.Column width={4}>
-                    <h4>
-                      <span>
-                        Email<span className="asterisk">*</span>
-                      </span>
-                    </h4>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Input className="InputColor" type="email" />
-                  </Grid.Column>
-                </Grid>
-                <Grid stackable>
-                  <Grid.Column width={4}>
-                    <h4>
-                      <span>
-                        Subject<span className="asterisk">*</span>
-                      </span>
-                    </h4>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Input className="InputColor" />
-                  </Grid.Column>
-                </Grid>
-                <Grid stackable>
-                  <Grid.Column width={4}>
-                    <h4>
-                      <span>
-                        Message<span className="asterisk">*</span>
-                      </span>
-                    </h4>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Form>
-                      <TextArea rows={12} className="InputColor" />
-                    </Form>
-                  </Grid.Column>
-                </Grid>
-                <Grid stackable>
-                  <Grid.Column width={12} floated="right">
-                    <Button color="black">S U B M I T</Button>
-                  </Grid.Column>
-                </Grid>
+                <Form>
+                  <Grid stackable>
+                    <Grid.Column width={4}>
+                      <h4>
+                        <span>
+                          Name<span className="asterisk">*</span>
+                        </span>
+                      </h4>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                      <Input required className="InputColor" />
+                    </Grid.Column>
+                  </Grid>
+                  <Grid stackable>
+                    <Grid.Column width={4}>
+                      <h4>
+                        <span>
+                          Email<span className="asterisk">*</span>
+                        </span>
+                      </h4>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                      <Input required className="InputColor" type="email" />
+                    </Grid.Column>
+                  </Grid>
+                  <Grid stackable>
+                    <Grid.Column width={4}>
+                      <h4>
+                        <span>
+                          Subject<span className="asterisk">*</span>
+                        </span>
+                      </h4>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                      <Input required className="InputColor" />
+                    </Grid.Column>
+                  </Grid>
+                  <Grid stackable>
+                    <Grid.Column width={4}>
+                      <h4>
+                        <span>
+                          Message<span className="asterisk">*</span>
+                        </span>
+                      </h4>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                      <TextArea required rows={12} className="InputColor" />
+                    </Grid.Column>
+                  </Grid>
+                  <Grid stackable>
+                    <Grid.Column width={12} floated="right">
+                      <Button color="black">S U B M I T</Button>
+                    </Grid.Column>
+                  </Grid>
+                </Form>
               </Grid.Column>
               <Grid.Column width={4} id="contactMe">
                 <h2>Contact me</h2>
