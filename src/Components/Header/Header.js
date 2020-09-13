@@ -28,7 +28,7 @@ class Header extends Component {
             <Menu.Item as="a" href="#home" name="HOME" active />
             <Menu.Item as="a" href="#about" name="ABOUT" />
             <Menu.Item as="a" href="#resume" name="RESUME" />
-            <Menu.Item as="a" href="#works" name="WORKS" />
+            <Menu.Item as="a" href="#projects" name="WORKS" />
             <Menu.Item as="a" href="#contact" name="CONTACT" />
           </Menu>
         </div>
@@ -64,7 +64,7 @@ class Header extends Component {
               <Icon name="file alternate" />
               RESUME
             </Menu.Item>
-            <Menu.Item as="a" href="#works" onClick={this.sidebarClose}>
+            <Menu.Item as="a" href="#projects" onClick={this.sidebarClose}>
               <Icon name="code" />
               WORKS
             </Menu.Item>

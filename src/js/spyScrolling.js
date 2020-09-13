@@ -3,7 +3,6 @@
 
 const spyScrolling = () => {
   const sections = document.getElementsByClassName("Section");
-  console.log(sections);
 
   window.onscroll = () => {
     const scrollPos =

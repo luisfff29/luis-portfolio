@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Grid, Image, Button } from "semantic-ui-react";
-import "./Works.css";
+import "./Projects.css";
 
-class Works extends Component {
+class Projects extends Component {
   render() {
     function project(image, title, framework, url_website, url_github) {
       return (
@@ -26,7 +26,7 @@ class Works extends Component {
       );
     }
     return (
-      <section id="works" className="Section">
+      <section id="projects" className="Section">
         <div className="Row">
           <h2>Check out some of my projects!</h2>
           <Grid>
@@ -65,4 +65,4 @@ class Works extends Component {
   }
 }
 
-export default Works;
+export default Projects;
