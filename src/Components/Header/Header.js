@@ -33,15 +33,26 @@ class Header extends Component {
       sidebarRight = "Sidebar-button sidebarOpen";
     }
 
+    const menus = [
+      { title: "home", icon: "home" },
+      { title: "about", icon: "user" },
+      { title: "resume", icon: "file alternate" },
+      { title: "projects", icon: "code" },
+      { title: "contact", icon: "phone" },
+    ];
+
     return (
       <header id="home" className="Section">
         <div className="Navbar">
           <Menu inverted pointing fixed="top" secondary>
-            <Menu.Item as="a" href="#home" name="HOME" active />
-            <Menu.Item as="a" href="#about" name="ABOUT" />
-            <Menu.Item as="a" href="#resume" name="RESUME" />
-            <Menu.Item as="a" href="#projects" name="PROJECTS" />
-            <Menu.Item as="a" href="#contact" name="CONTACT" />
+            {menus.map((menu) => (
+              <Menu.Item
+                key={menu.title}
+                as="a"
+                href={`#${menu.title}`}
+                name={menu.title.toUpperCase()}
+              />
+            ))}
           </Menu>
         </div>
 
@@ -64,26 +75,17 @@ class Header extends Component {
             width="thin"
             direction="right"
           >
-            <Menu.Item as="a" href="#home" onClick={this.sidebarClose}>
-              <Icon name="home" />
-              HOME
-            </Menu.Item>
-            <Menu.Item as="a" href="#about" onClick={this.sidebarClose}>
-              <Icon name="user" />
-              ABOUT
-            </Menu.Item>
-            <Menu.Item as="a" href="#resume" onClick={this.sidebarClose}>
-              <Icon name="file alternate" />
-              RESUME
-            </Menu.Item>
-            <Menu.Item as="a" href="#projects" onClick={this.sidebarClose}>
-              <Icon name="code" />
-              WORKS
-            </Menu.Item>
-            <Menu.Item as="a" href="#contact" onClick={this.sidebarClose}>
-              <Icon name="phone" />
-              CONTACT
-            </Menu.Item>
+            {menus.map((menu) => (
+              <Menu.Item
+                key={menu.title}
+                as="a"
+                href={`#${menu.title}`}
+                onClick={this.sidebarClose}
+              >
+                <Icon name={menu.icon} />
+                {menu.title.toUpperCase()}
+              </Menu.Item>
+            ))}
           </Sidebar>
         </div>
 
