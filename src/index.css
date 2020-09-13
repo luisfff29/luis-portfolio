@@ -19,6 +19,20 @@ body {
   background-color: rgb(32, 35, 36) !important;
 }
 
+.ui.placeholder.lighter,
+.ui.placeholder.lighter .line,
+.ui.placeholder.lighter .line:after,
+.ui.placeholder.lighter > :before {
+  background-color: rgb(54, 59, 61) !important;
+}
+
+.ui.placeholder.darker,
+.ui.placeholder.darker .line,
+.ui.placeholder.darker .line:after,
+.ui.placeholder.darker > :before {
+  background-color: rgb(32, 35, 36) !important;
+}
+
 .Row {
   width: 96%;
   max-width: 1020px;

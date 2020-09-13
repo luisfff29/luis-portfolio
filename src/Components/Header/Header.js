@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Icon, Sidebar, Button } from "semantic-ui-react";
+import { Menu, Icon, Sidebar, Button, Loader } from "semantic-ui-react";
 import "./Header.css";
 
 class Header extends Component {
@@ -88,11 +88,15 @@ class Header extends Component {
         </div>
 
         <div className="banner">
-          <div className="banner-text">
-            <h1>I'm {name}.</h1>
-            <h3>{description}</h3>
-            <ul className="social">{medias}</ul>
-          </div>
+          {this.props.loading ? (
+            <Loader active content="Loading" size="massive" />
+          ) : (
+            <div className="banner-text">
+              <h1>I'm {name}</h1>
+              <h3>{description}</h3>
+              <ul className="social">{medias}</ul>
+            </div>
+          )}
         </div>
         <a href="#about">
           <Icon name="chevron circle down" size="big" id="arrow_down" />

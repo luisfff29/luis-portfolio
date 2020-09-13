@@ -1,5 +1,13 @@
 import React, { Component } from "react";
-import { Grid, Icon, Input, TextArea, Form, Button } from "semantic-ui-react";
+import {
+  Grid,
+  Icon,
+  Input,
+  TextArea,
+  Form,
+  Button,
+  Placeholder,
+} from "semantic-ui-react";
 import "./Contact.css";
 
 class Contact extends Component {
@@ -72,17 +80,29 @@ class Contact extends Component {
                   </Grid>
                   <Grid stackable>
                     <Grid.Column width={12} floated="right">
-                      <Button color="black">S U B M I T</Button>
+                      <Button disabled={this.props.loading} color="black">
+                        S U B M I T
+                      </Button>
                     </Grid.Column>
                   </Grid>
                 </Form>
               </Grid.Column>
               <Grid.Column width={4} id="contactMe">
                 <h2>Contact me</h2>
-                <p>{name}</p>
-                <p>{address}</p>
-                <p>{phone}</p>
-                <p>{email}</p>
+                {this.props.loading ? (
+                  <Placeholder inverted className="lighter">
+                    {[...Array(4)].map((_, i) => (
+                      <Placeholder.Line length="medium" key={i} />
+                    ))}
+                  </Placeholder>
+                ) : (
+                  <div>
+                    <p>{name}</p>
+                    <p>{address}</p>
+                    <p>{phone}</p>
+                    <p>{email}</p>
+                  </div>
+                )}
               </Grid.Column>
             </Grid.Row>
           </Grid>

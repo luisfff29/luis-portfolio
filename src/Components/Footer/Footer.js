@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Icon } from "semantic-ui-react";
+import { Icon, Loader } from "semantic-ui-react";
 import "./Footer.css";
 
 class Footer extends Component {
@@ -22,11 +22,17 @@ class Footer extends Component {
             <Icon name="chevron circle up" id="#arrow_up" size="big" />
           </a>
         </div>
-        <ul className="social">{medias}</ul>
+        <ul className="social">
+          {this.props.loading ? <Loader active size="small" /> : medias}
+        </ul>
         <div id="credits">
           <p>
             Modified by{" "}
-            <a href="https://www.linkedin.com/in/luisfff29/">{name}</a>
+            {this.props.loading ? (
+              ""
+            ) : (
+              <a href="https://www.linkedin.com/in/luisfff29/">{name}</a>
+            )}
           </p>
           <ul className="copyright">
             <li>&copy; Copyright 2014 Ceeve</li>

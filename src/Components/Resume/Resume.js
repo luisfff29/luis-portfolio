@@ -1,23 +1,10 @@
 import React, { Component } from "react";
-import { Grid, Progress, Icon } from "semantic-ui-react";
+import { Grid, Progress, Icon, Placeholder } from "semantic-ui-react";
 import "./Resume.css";
 
 class Resume extends Component {
   render() {
-    function bar(name, icon, percentage, color) {
-      if (icon === "dj") {
-        icon = "dj";
-      } else {
-        icon = <Icon name={icon} />;
-      }
-      return (
-        <Progress percent={percentage} color={color} active inverted progress>
-          {icon} {name}
-        </Progress>
-      );
-    }
-
-    if (this.props.data) {
+    if (this.props.data && !this.props.loading) {
       var education = this.props.data.education.map((edu) => (
         <div key={edu.school} className="division">
           <h3>{edu.school}</h3>
@@ -42,6 +29,7 @@ class Resume extends Component {
 
       var skills = this.props.data.skills.map((lang) => (
         <Progress
+          key={lang.name}
           percent={lang.level}
           color={lang.color}
           active
@@ -54,6 +42,18 @@ class Resume extends Component {
       ));
     }
 
+    var placeholder = (
+      <Placeholder inverted className="lighter">
+        {[...Array(2)].map((_, i) => (
+          <Placeholder.Paragraph key={i}>
+            {[...Array(4)].map((_, j) => (
+              <Placeholder.Line key={j} />
+            ))}
+          </Placeholder.Paragraph>
+        ))}
+      </Placeholder>
+    );
+
     return (
       <section id="resume" className="Section">
         <div className="Row">
@@ -64,7 +64,9 @@ class Resume extends Component {
                   <span>EDUCATION</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>{education}</Grid.Column>
+              <Grid.Column width={13}>
+                {this.props.loading ? placeholder : education}
+              </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={2} stretched>
               <Grid.Column width={3}>
@@ -72,7 +74,9 @@ class Resume extends Component {
                   <span>WORK</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>{work}</Grid.Column>
+              <Grid.Column width={13}>
+                {this.props.loading ? placeholder : work}
+              </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={2}>
               <Grid.Column width={3}>
@@ -80,7 +84,9 @@ class Resume extends Component {
                   <span>SKILLS</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>{skills}</Grid.Column>
+              <Grid.Column width={13}>
+                {this.props.loading ? placeholder : skills}
+              </Grid.Column>
             </Grid.Row>
           </Grid>
         </div>

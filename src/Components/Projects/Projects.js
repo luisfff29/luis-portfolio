@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Image, Button } from "semantic-ui-react";
+import { Grid, Image, Button, Placeholder } from "semantic-ui-react";
 import "./Projects.css";
 
 class Projects extends Component {
@@ -42,11 +42,23 @@ class Projects extends Component {
       ));
     }
 
+    var placeholder = (
+      <Grid.Row centered columns={4}>
+        {[...Array(4)].map((_, i) => (
+          <Grid.Column key={i}>
+            <Placeholder inverted className="darker">
+              <Placeholder.Image rectangular />
+            </Placeholder>
+          </Grid.Column>
+        ))}
+      </Grid.Row>
+    );
+
     return (
       <section id="projects" className="Section">
         <div className="Row">
           <h2>Check out some of my projects!</h2>
-          <Grid>{projects}</Grid>
+          <Grid stackable>{this.props.loading ? placeholder : projects}</Grid>
         </div>
       </section>
     );

@@ -10,12 +10,12 @@ import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
 class App extends Component {
-  state = { data: {} };
+  state = { data: {}, loading: true };
 
   componentDidMount = () => {
     fetch("resumeData.json")
       .then((res) => res.json())
-      .then((result) => this.setState({ data: result }));
+      .then((result) => this.setState({ data: result, loading: false }));
   };
 
   render() {
@@ -23,12 +23,15 @@ class App extends Component {
 
     return (
       <div>
-        <Header data={this.state.data.main} />
-        <About data={this.state.data.main} />
-        <Resume data={this.state.data.resume} />
-        <Projects data={this.state.data.projects} />
-        <Contact data={this.state.data.main} />
-        <Footer data={this.state.data.main} />
+        <Header data={this.state.data.main} loading={this.state.loading} />
+        <About data={this.state.data.main} loading={this.state.loading} />
+        <Resume data={this.state.data.resume} loading={this.state.loading} />
+        <Projects
+          data={this.state.data.projects}
+          loading={this.state.loading}
+        />
+        <Contact data={this.state.data.main} loading={this.state.loading} />
+        <Footer data={this.state.data.main} loading={this.state.loading} />
       </div>
     );
   }
