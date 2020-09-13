@@ -16,6 +16,18 @@ class Header extends Component {
   };
 
   render() {
+    if (this.props.data) {
+      var name = this.props.data.name;
+      var description = this.props.data.description;
+      var medias = this.props.data.social.map((media) => (
+        <li key={media.name}>
+          <a href={media.url}>
+            <Icon name={media.name} size="big" />
+          </a>
+        </li>
+      ));
+    }
+
     let sidebarRight = "Sidebar-button";
     if (this.state.open) {
       sidebarRight = "Sidebar-button sidebarOpen";
@@ -28,7 +40,7 @@ class Header extends Component {
             <Menu.Item as="a" href="#home" name="HOME" active />
             <Menu.Item as="a" href="#about" name="ABOUT" />
             <Menu.Item as="a" href="#resume" name="RESUME" />
-            <Menu.Item as="a" href="#projects" name="WORKS" />
+            <Menu.Item as="a" href="#projects" name="PROJECTS" />
             <Menu.Item as="a" href="#contact" name="CONTACT" />
           </Menu>
         </div>
@@ -77,24 +89,9 @@ class Header extends Component {
 
         <div className="banner">
           <div className="banner-text">
-            <h1>I'm Luis Fuentes.</h1>
-            <h3>
-              I'm a <strong>Software Developer</strong> based on{" "}
-              <strong>Dallas, Texas</strong>. Let's start scrolling and learn
-              more about me
-            </h3>
-            <ul className="social">
-              <li>
-                <a href="https://linkedin.com/in/luisfff29">
-                  <Icon name="linkedin" size="big" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/luisfff29">
-                  <Icon name="github" size="big" />
-                </a>
-              </li>
-            </ul>
+            <h1>I'm {name}.</h1>
+            <h3>{description}</h3>
+            <ul className="social">{medias}</ul>
           </div>
         </div>
         <a href="#about">

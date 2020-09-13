@@ -2,6 +2,14 @@
   background-color: rgb(54, 59, 61);
 }
 
+.division {
+  padding-bottom: 2rem;
+}
+
+.division:last-child {
+  padding-bottom: 0;
+}
+
 #resume p,
 #resume strong {
   color: rgb(175, 170, 162);

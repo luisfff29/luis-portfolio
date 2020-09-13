@@ -17,6 +17,43 @@ class Resume extends Component {
       );
     }
 
+    if (this.props.data) {
+      var education = this.props.data.education.map((edu) => (
+        <div key={edu.school} className="division">
+          <h3>{edu.school}</h3>
+          <p>
+            <em>{edu.program}</em>&emsp;• {edu.graduation}
+          </p>
+          <p>{edu.description}</p>
+        </div>
+      ));
+
+      var work = this.props.data.work.map((job) => (
+        <div key={job.company} className="division">
+          <h3>{job.company}</h3>
+          {job.position.map((pos) => (
+            <p key={pos.title}>
+              <em>{pos.title}</em>&emsp;• {pos.years}
+            </p>
+          ))}
+          <p>{job.description}</p>
+        </div>
+      ));
+
+      var skills = this.props.data.skills.map((lang) => (
+        <Progress
+          percent={lang.level}
+          color={lang.color}
+          active
+          inverted
+          progress
+        >
+          {lang.icon !== "dj" ? <Icon name={lang.icon} /> : lang.icon}{" "}
+          {lang.name}
+        </Progress>
+      ));
+    }
+
     return (
       <section id="resume" className="Section">
         <div className="Row">
@@ -27,27 +64,7 @@ class Resume extends Component {
                   <span>EDUCATION</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>
-                <h3>Kenzie Academy</h3>
-                <p>
-                  <em>Software Engineering Certification Program</em>
-                  &emsp;•&nbsp; August 2019 - July 2020
-                </p>
-                <p>
-                  Gratuated with <strong>Front-End</strong> and{" "}
-                  <strong>Full-Stack Web Development</strong> certifications.
-                </p>
-                <h3>My Computer Career</h3>
-                <p>
-                  <em>Technical Systems and Security Certification Program</em>
-                  &emsp;•&nbsp; November 2018 - June 2019
-                </p>
-                <p>
-                  CompTIA A+, Server+, Network+, and Security+ certified.
-                  <br />
-                  Microsoft and Linux certifications.
-                </p>
-              </Grid.Column>
+              <Grid.Column width={13}>{education}</Grid.Column>
             </Grid.Row>
             <Grid.Row columns={2} stretched>
               <Grid.Column width={3}>
@@ -55,31 +72,7 @@ class Resume extends Component {
                   <span>WORK</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>
-                <h3>Global Asset, LLC</h3>
-                <p>
-                  <em>Associate</em>
-                  &emsp;•&nbsp; August 2019
-                </p>
-                <p>
-                  Staffing support helping out campus technicians to assist them
-                  installing Chromebooks in Rockwall, TX high schools.
-                </p>
-                <h3>Wal-Mart Stores, Inc.</h3>
-                <p>
-                  <em>Overnight Stocker</em>
-                  &emsp;•&nbsp; April 2016 - Current
-                  <br />
-                  <em>Department Manager</em>
-                  &emsp;•&nbsp; August 2018 - January 2019
-                </p>
-                <p>
-                  Consulting inventory reports, unpacking merchandise, arranging
-                  items on shelves, updating activity records, taking safety
-                  precautions, collaborating with watchmen, and reporting to
-                  managers.
-                </p>
-              </Grid.Column>
+              <Grid.Column width={13}>{work}</Grid.Column>
             </Grid.Row>
             <Grid.Row columns={2}>
               <Grid.Column width={3}>
@@ -87,15 +80,7 @@ class Resume extends Component {
                   <span>SKILLS</span>
                 </h4>
               </Grid.Column>
-              <Grid.Column width={13}>
-                {bar("Python", "python", 100, "blue")}
-                {bar("Javascript", "js", 95, "yellow")}
-                {bar("Django", "dj", 100, "green")}
-                {bar("React", "react", 95, "violet")}
-                {bar("HTML5", "html5", 100, "red")}
-                {bar("CSS3", "css3", 90, "blue")}
-                {bar("Git", "git", 95, "grey")}
-              </Grid.Column>
+              <Grid.Column width={13}>{skills}</Grid.Column>
             </Grid.Row>
           </Grid>
         </div>

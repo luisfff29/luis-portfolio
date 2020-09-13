@@ -4,6 +4,17 @@ import "./Footer.css";
 
 class Footer extends Component {
   render() {
+    if (this.props.data) {
+      var name = this.props.data.name;
+      var medias = this.props.data.social.map((media) => (
+        <li key={media.name}>
+          <a href={media.url}>
+            <Icon name={media.name} size="big" />
+          </a>
+        </li>
+      ));
+    }
+
     return (
       <section id="footer">
         <div id="arrow_up">
@@ -11,22 +22,11 @@ class Footer extends Component {
             <Icon name="chevron circle up" id="#arrow_up" size="big" />
           </a>
         </div>
-        <ul className="social">
-          <li>
-            <a href="https://linkedin.com/in/luisfff29">
-              <Icon name="linkedin" size="big" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/luisfff29">
-              <Icon name="github" size="big" />
-            </a>
-          </li>
-        </ul>
+        <ul className="social">{medias}</ul>
         <div id="credits">
           <p>
             Modified by{" "}
-            <a href="https://www.linkedin.com/in/luisfff29/">Luis Fuentes</a>
+            <a href="https://www.linkedin.com/in/luisfff29/">{name}</a>
           </p>
           <ul className="copyright">
             <li>&copy; Copyright 2014 Ceeve</li>

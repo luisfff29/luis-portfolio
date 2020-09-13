@@ -4,6 +4,14 @@ import "./About.css";
 
 class About extends Component {
   render() {
+    if (this.props.data) {
+      var bio = this.props.data.bio;
+      var name = this.props.data.name;
+      var address = `${this.props.data.address.city}, ${this.props.data.address.state} - ${this.props.data.address.zip}`;
+      var phone = this.props.data.phone;
+      var email = this.props.data.email;
+    }
+
     return (
       <section id="about" className="Section">
         <div className="Row">
@@ -20,21 +28,17 @@ class About extends Component {
               <Grid.Column width={12}>
                 <div id="aboutMe">
                   <h3>About Me</h3>
-                  <p>
-                    My name is Luis Fuentes, I'm a Full Stack Web Developer from
-                    Kenzie Academy and I'm really excited to start a new job as
-                    a Software Developer.
-                  </p>
+                  <p>{bio}</p>
                 </div>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column floated="right" width={6}>
                 <h3>Contact Details</h3>
-                <p>Luis Fuentes</p>
-                <p>Wylie, TX - 75098</p>
-                <p>(214) 721-2378</p>
-                <p>luisfff29@gmail.com</p>
+                <p>{name}</p>
+                <p>{address}</p>
+                <p>{phone}</p>
+                <p>{email}</p>
               </Grid.Column>
               <Grid.Column width={6}>
                 <Button

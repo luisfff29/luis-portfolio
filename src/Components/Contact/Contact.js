@@ -4,6 +4,13 @@ import "./Contact.css";
 
 class Contact extends Component {
   render() {
+    if (this.props.data) {
+      var name = this.props.data.name;
+      var address = `${this.props.data.address.city}, ${this.props.data.address.state} - ${this.props.data.address.zip}`;
+      var phone = this.props.data.phone;
+      var email = this.props.data.email;
+    }
+
     return (
       <section id="contact" className="Section">
         <div className="Row">
@@ -72,10 +79,10 @@ class Contact extends Component {
               </Grid.Column>
               <Grid.Column width={4} id="contactMe">
                 <h2>Contact me</h2>
-                <p>Luis Fuentes</p>
-                <p>Wylie, TX - 75098</p>
-                <p>(214)-721-2378</p>
-                <p>luisfff29@gmail.com</p>
+                <p>{name}</p>
+                <p>{address}</p>
+                <p>{phone}</p>
+                <p>{email}</p>
               </Grid.Column>
             </Grid.Row>
           </Grid>

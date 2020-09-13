@@ -4,61 +4,49 @@ import "./Projects.css";
 
 class Projects extends Component {
   render() {
-    function project(image, title, framework, url_website, url_github) {
-      return (
-        <Grid.Column mobile={16} tablet={8} computer={4} className="Container">
-          <Image fluid src={image} />
+    if (this.props.data) {
+      var projects = this.props.data.map((project) => (
+        <Grid.Column
+          key={project.title}
+          mobile={16}
+          tablet={8}
+          computer={4}
+          className="Container"
+        >
+          <Image fluid src={project.image} />
           <div className="Project">
             <h5>
-              <u>{title}</u>
+              <u>{project.title}</u>
             </h5>
-            <p>{framework}</p>
+            <p>{project.category}</p>
             <Button.Group vertical>
-              <Button color="teal" as="a" href={url_website} target="_blank">
+              <Button
+                color="teal"
+                as="a"
+                href={project.url.website}
+                target="_blank"
+              >
                 Check website
               </Button>
-              <Button color="grey" as="a" href={url_github} target="_blank">
+              <Button
+                color="grey"
+                as="a"
+                href={project.url.repository}
+                target="_blank"
+              >
                 Check repository
               </Button>
             </Button.Group>
           </div>
         </Grid.Column>
-      );
+      ));
     }
+
     return (
       <section id="projects" className="Section">
         <div className="Row">
           <h2>Check out some of my projects!</h2>
-          <Grid>
-            {project(
-              "images/project_kenziegram.png",
-              "KenzieGram",
-              "Node.js",
-              "https://super-kenziegram.herokuapp.com/",
-              "https://github.com/luisfff29/super-kenziegram/"
-            )}
-            {project(
-              "images/project_signup_form.png",
-              "Signup Form",
-              "Node.js",
-              "https://signup-form-app.herokuapp.com/",
-              "https://github.com/luisfff29/signup-form/"
-            )}
-            {project(
-              "images/project_kwitter.png",
-              "Kwitter",
-              "React.js",
-              "https://kwitter-frontend.herokuapp.com/",
-              "https://github.com/luisfff29/kwitter-frontend/"
-            )}
-            {project(
-              "images/project_overdrive.png",
-              "Overdrive Library",
-              "Django",
-              "https://django-overdrive.com/",
-              "https://github.com/luisfff29/overdrive-library/"
-            )}
-          </Grid>
+          <Grid>{projects}</Grid>
         </div>
       </section>
     );
