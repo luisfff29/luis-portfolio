@@ -1,0 +1,154 @@
+{
+  "main": {
+    "name": "Luis Fuentes",
+    "description": "I'm a Software Developer based on Dallas, Texas. Let's start scrolling and learn more about me",
+    "bio": "My name is Luis Fuentes, I'm a Full Stack Web Developer from Kenzie Academy and I'm really excited to start a new job as a Software Developer. ",
+    "email": "luisfff29@gmail.com",
+    "phone": "(214)721-2378",
+    "address": {
+      "city": "Wylie",
+      "state": "TX",
+      "zip": "75098"
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/luisfff29/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/luisfff29/"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Kenzie Academy",
+        "program": "Software Engineering Certification Program",
+        "years": "August 2020",
+        "description": "Graduated with Front-End and Full-Stack Web Development certifications."
+      },
+      {
+        "school": "My Computer Career",
+        "program": "Technical Systems and Security Certification Program",
+        "years": "June 2019",
+        "description": "Obtained CompTIA certifications such as A+, Server+, Network+, and Security+ \nObtained MTA Fundamentals certificationes and Linux Essentials."
+      },
+      {
+        "school": "Niño Jesús de Praga",
+        "program": "High School Diploma",
+        "years": "December 2014",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Global Asset, LLC",
+        "position": [
+          {
+            "title": "Associate",
+            "years": "August 2019"
+          }
+        ],
+        "description": "Staffing support helping out campus technicians to assist them installing Chromebooks in Rockwall, TX high schools."
+      },
+      {
+        "company": "Wal-Mart Stores, Inc.",
+        "position": [
+          {
+            "title": "Overnight Stocker",
+            "years": "April 2016 - Current"
+          },
+          {
+            "title": "Department Manager",
+            "years": "August 2018 - January 2019"
+          }
+        ],
+        "description": "Building MrQ, a gambling website."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "icon": "python",
+        "level": "100%",
+        "color": "blue"
+      },
+      {
+        "name": "Javascript",
+        "icon": "js",
+        "level": "90",
+        "color": "yellow"
+      },
+      {
+        "name": "Django",
+        "icon": "dj",
+        "level": "100",
+        "color": "green"
+      },
+      {
+        "name": "React",
+        "icon": "react",
+        "level": "95",
+        "color": "violet"
+      },
+      {
+        "name": "HTML5",
+        "icon": "html5",
+        "level": "100",
+        "color": "red"
+      },
+      {
+        "name": "CSS3",
+        "icon": "css3",
+        "level": "90",
+        "color": "blue"
+      },
+      {
+        "name": "Git",
+        "icon": "git",
+        "level": "95",
+        "color": "grey"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "KenzieGram",
+      "category": "Node.js",
+      "image": "images/projet_kenziegram.png",
+      "url": {
+        "website": "https://super-kenziegram.herokuapp.com/",
+        "repository": "https://github.com/luisfff29/super-kenziegram/"
+      }
+    },
+    {
+      "title": "Signup Form",
+      "category": "Node.js",
+      "image": "images/projet_signup_form.png",
+      "url": {
+        "website": "https://signup-form-app.herokuapp.com/",
+        "repository": "https://github.com/luisfff29/signup-form/"
+      }
+    },
+    {
+      "title": "Kwitter",
+      "category": "React",
+      "image": "images/projet_kwitter.png",
+      "url": {
+        "website": "https://kwitter-frontend.herokuapp.com/",
+        "repository": "https://github.com/luisfff29/kwitter-frontend/"
+      }
+    },
+    {
+      "title": "Overdrive",
+      "category": "Django",
+      "image": "images/projet_overdrive.png",
+      "url": {
+        "website": "https://django-overdrive.com/",
+        "repository": "https://github.com/luisfff29/overdrive-library/"
+      }
+    }
+  ]
+}
