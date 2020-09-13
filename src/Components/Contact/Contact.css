@@ -41,6 +41,11 @@
   color: rgb(175, 170, 162);
 }
 
+#contactMe p a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 1024px) {
 }
 

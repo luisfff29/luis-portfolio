@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   Grid,
   Icon,
-  Input,
   TextArea,
   Form,
   Button,
@@ -11,6 +10,20 @@ import {
 import "./Contact.css";
 
 class Contact extends Component {
+  state = { name: "", subject: "", message: "" };
+
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    window.open(
+      `mailto:luisfff29@gmail.com?subject=${this.state.subject}&body=${this.state.message}%0d%0aBest regards, ${this.state.name}%0d%0a%0d%0aSent from your Portfolio`
+    );
+    this.setState({ name: "", subject: "", message: "" });
+  };
+
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -39,19 +52,29 @@ class Contact extends Component {
                       </h4>
                     </Grid.Column>
                     <Grid.Column width={10}>
-                      <Input required className="InputColor" />
+                      <Form.Input
+                        required
+                        className="InputColor"
+                        name="name"
+                        placeholder="Your name"
+                        onChange={(e) => this.handleChange(e)}
+                      />
                     </Grid.Column>
                   </Grid>
                   <Grid stackable>
                     <Grid.Column width={4}>
                       <h4>
                         <span>
-                          Email<span className="asterisk">*</span>
+                          To<span className="asterisk">*</span>
                         </span>
                       </h4>
                     </Grid.Column>
                     <Grid.Column width={10}>
-                      <Input required className="InputColor" type="email" />
+                      <Form.Input
+                        className="InputColor"
+                        value={email}
+                        readOnly
+                      />
                     </Grid.Column>
                   </Grid>
                   <Grid stackable>
@@ -63,7 +86,12 @@ class Contact extends Component {
                       </h4>
                     </Grid.Column>
                     <Grid.Column width={10}>
-                      <Input required className="InputColor" />
+                      <Form.Input
+                        required
+                        className="InputColor"
+                        name="subject"
+                        onChange={(e) => this.handleChange(e)}
+                      />
                     </Grid.Column>
                   </Grid>
                   <Grid stackable>
@@ -75,12 +103,23 @@ class Contact extends Component {
                       </h4>
                     </Grid.Column>
                     <Grid.Column width={10}>
-                      <TextArea required rows={12} className="InputColor" />
+                      <TextArea
+                        required
+                        rows={12}
+                        className="InputColor"
+                        name="message"
+                        onChange={(e) => this.handleChange(e)}
+                      />
                     </Grid.Column>
                   </Grid>
                   <Grid stackable>
                     <Grid.Column width={12} floated="right">
-                      <Button disabled={this.props.loading} color="black">
+                      <Button
+                        disabled={this.props.loading}
+                        color="black"
+                        onClick={this.handleSubmit}
+                        type="submit"
+                      >
                         S U B M I T
                       </Button>
                     </Grid.Column>
@@ -99,8 +138,12 @@ class Contact extends Component {
                   <div>
                     <p>{name}</p>
                     <p>{address}</p>
-                    <p>{phone}</p>
-                    <p>{email}</p>
+                    <p>
+                      <a href="tel:+12147212378">{phone}</a>
+                    </p>
+                    <p>
+                      <a href={`mailto:${email}`}>{email}</a>
+                    </p>
                   </div>
                 )}
               </Grid.Column>

@@ -58,8 +58,12 @@ class About extends Component {
                   <div>
                     <p>{name}</p>
                     <p>{address}</p>
-                    <p>{phone}</p>
-                    <p>{email}</p>
+                    <p>
+                      <a href="tel:+12147212378">{phone}</a>
+                    </p>
+                    <p>
+                      <a href={`mailto:${email}`}>{email}</a>
+                    </p>
                   </div>
                 )}
               </Grid.Column>
