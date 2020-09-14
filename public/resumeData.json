@@ -118,6 +118,7 @@
       "title": "KenzieGram",
       "category": "Node.js",
       "image": "images/project_kenziegram.png",
+      "description": "Basic Instagram clone using Node.js, Express.js, Multer, and EJS package",
       "url": {
         "website": "https://super-kenziegram.herokuapp.com/",
         "repository": "https://github.com/luisfff29/super-kenziegram/"
@@ -127,6 +128,7 @@
       "title": "Signup Form",
       "category": "Node.js",
       "image": "images/project_signup_form.png",
+      "description": "Sign up form with Express.js, and EJS package. Server code and Client code written in the same project",
       "url": {
         "website": "https://signup-form-app.herokuapp.com/",
         "repository": "https://github.com/luisfff29/signup-form/"
@@ -136,6 +138,7 @@
       "title": "Kwitter",
       "category": "React",
       "image": "images/project_kwitter.png",
+      "description": "Clone of a common micro-blogging platform. Final Capstone Project for the first semester at Kenzie Academy",
       "url": {
         "website": "https://kwitter-frontend.herokuapp.com/",
         "repository": "https://github.com/luisfff29/kwitter-frontend/"
@@ -145,6 +148,7 @@
       "title": "Overdrive",
       "category": "Django",
       "image": "images/project_overdrive.png",
+      "description": "Overdrive Library is a Python/Django project that recreates an online library's backend. Team project for final Capstone (second semester) at Kenzie Academy",
       "url": {
         "website": "https://django-overdrive.com/",
         "repository": "https://github.com/luisfff29/overdrive-library/"

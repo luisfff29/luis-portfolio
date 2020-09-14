@@ -1,49 +1,96 @@
 import React, { Component } from "react";
-import { Grid, Image, Button, Placeholder } from "semantic-ui-react";
+import {
+  Grid,
+  Image,
+  Button,
+  Placeholder,
+  Reveal,
+  Modal,
+  Card,
+} from "semantic-ui-react";
 import "./Projects.css";
 
 class Projects extends Component {
   render() {
+    const extra = (website, repository) => (
+      <div className="ui two buttons">
+        <Button
+          as="a"
+          href={website}
+          target="_blank"
+          basic
+          color="teal"
+          content="Check website"
+        />
+        <Button
+          as="a"
+          href={repository}
+          target="_blank"
+          basic
+          color="grey"
+          content="Check repository"
+        />
+      </div>
+    );
+
     if (this.props.data) {
       var projects = this.props.data.map((project) => (
         <Grid.Column
-          key={project.title}
-          mobile={16}
-          tablet={8}
           computer={4}
+          tablet={8}
+          key={project.title}
           className="Container"
         >
-          <Image fluid src={project.image} />
-          <div className="Project">
-            <h5>
-              <u>{project.title}</u>
-            </h5>
-            <p>{project.category}</p>
-            <Button.Group vertical>
-              <Button
-                color="teal"
-                as="a"
-                href={project.url.website}
-                target="_blank"
-              >
-                Check website
-              </Button>
-              <Button
-                color="grey"
-                as="a"
-                href={project.url.repository}
-                target="_blank"
-              >
-                Check repository
-              </Button>
-            </Button.Group>
-          </div>
+          <Reveal animated="move up">
+            <Reveal.Content visible>
+              <Image src={project.image} />
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <div className="Project">
+                <h5>
+                  <u>{project.title}</u>
+                </h5>
+                <p>{project.category}</p>
+                <Button.Group vertical className="More">
+                  <Button
+                    as="a"
+                    href={project.url.website}
+                    target="_blank"
+                    color="teal"
+                    content="Check website"
+                  />
+                  <Button
+                    as="a"
+                    href={project.url.repository}
+                    target="_blank"
+                    color="grey"
+                    content="Check repository"
+                  />
+                </Button.Group>
+                <Modal
+                  dimmer="blurring"
+                  size="tiny"
+                  trigger={
+                    <Button basic inverted icon="plus" className="Plus" />
+                  }
+                >
+                  <Card
+                    style={{ width: "100%" }}
+                    image={project.image}
+                    header={project.title}
+                    description={project.description}
+                    extra={extra(project.url.website, project.url.repository)}
+                  />
+                </Modal>
+              </div>
+            </Reveal.Content>
+          </Reveal>
         </Grid.Column>
       ));
     }
 
     var placeholder = (
-      <Grid.Row centered columns={4}>
+      <Grid.Row>
         {[...Array(4)].map((_, i) => (
           <Grid.Column key={i}>
             <Placeholder inverted className="darker">

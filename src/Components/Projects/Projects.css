@@ -4,45 +4,52 @@
 }
 
 .Project {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 88%;
-  height: 84%;
-  padding: 0.5rem;
   text-align: center;
 }
 
-.Container .Project {
-  display: none;
+.Project > * {
+  transform: translateY(50%);
+  margin: 0.1rem;
+  margin: 0 auto !important;
 }
 
-.Container:hover .Project {
-  display: block;
-}
-
-.Project h3 {
-  padding: 0 !important;
-}
-
-.Project .buttons a {
-  font-size: 14px !important;
+.Project .More {
+  display: none !important;
 }
 
 @media only screen and (max-width: 991px) {
   .Project {
-    padding: 1rem;
-    width: 94%;
-    height: 92%;
-  }
-
-  .Project .buttons a {
-    font-size: 1rem !important;
+    transform: translateY(10%);
   }
 
   .Project > * {
-    font-size: 1.8rem;
+    font-size: 2em;
+    margin: 0.5rem auto !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Project {
+    transform: translateY(0%);
+  }
+
+  .Project > * {
+    font-size: 1.5rem;
+  }
+
+  .Project .Plus {
+    display: none !important;
+  }
+
+  .Project .More {
+    display: block !important;
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .Project > * {
+    font-size: 1rem;
+    transform: translateY(10%);
   }
 }
