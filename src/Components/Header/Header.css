@@ -31,7 +31,7 @@ header {
   top: 15px;
   right: 15px;
   z-index: 150;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .sidebarOpen {
@@ -74,7 +74,7 @@ header {
   position: absolute;
   bottom: 2rem;
   transform: translateX(-20px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #arrow_down:hover {
@@ -88,9 +88,6 @@ header {
   padding: 1rem;
   font-size: 0.75rem;
   color: rgb(177, 171, 161);
-}
-
-@media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 900px) {

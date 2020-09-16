@@ -14,7 +14,7 @@
 #arrow_up i.icon {
   position: absolute;
   transform: translate(-20px, -75px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #arrow_up i.icon:hover {

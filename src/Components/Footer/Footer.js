@@ -35,7 +35,7 @@ class Footer extends Component {
             )}
           </p>
           <ul className="copyright">
-            <li>&copy; Copyright 2014 Ceeve</li>
+            <li>&copy; Copyright 2020 Ceeve</li>
             <li>
               Design by{" "}
               <a

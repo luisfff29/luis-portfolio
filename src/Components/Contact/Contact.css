@@ -10,7 +10,7 @@
 
 .contactTitle i {
   padding-left: 1rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contactTitle i:hover {
@@ -46,12 +46,6 @@
   color: inherit;
 }
 
-@media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 900px) {
-}
-
 @media only screen and (max-width: 767px) {
   .contactTitle h3 {
     display: block;
@@ -60,7 +54,4 @@
   .contactTitle i {
     display: none !important;
   }
-}
-
-@media only screen and (max-width: 480px) {
 }
