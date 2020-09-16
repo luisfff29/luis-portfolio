@@ -13,7 +13,9 @@ const spyScrolling = () => {
         sections[s].offsetTop <= scrollPos + 1
       ) {
         const id = sections[s].id;
-        document.querySelector(".active").classList.remove("active");
+        if (document.querySelector(".active")) {
+          document.querySelector(".active").classList.remove("active");
+        }
         document.querySelector(`a[href*=${id}]`).classList.add("active");
       }
   };
