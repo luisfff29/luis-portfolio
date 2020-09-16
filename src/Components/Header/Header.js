@@ -28,9 +28,9 @@ class Header extends Component {
       ));
     }
 
-    let sidebarRight = "Sidebar-button";
+    let sidebarOpen = "Sidebar";
     if (this.state.open) {
-      sidebarRight = "Sidebar-button sidebarOpen";
+      sidebarOpen = "Sidebar sidebarOpen";
     }
 
     const menus = [
@@ -44,7 +44,7 @@ class Header extends Component {
     return (
       <header id="home" className="Section">
         <div className="Navbar">
-          <Menu inverted pointing fixed="top" secondary>
+          <Menu inverted pointing fixed="top" secondary id="menuTop">
             {menus.map((menu) => (
               <Menu.Item
                 key={menu.title}
@@ -56,14 +56,14 @@ class Header extends Component {
           </Menu>
         </div>
 
-        <div className="Sidebar">
+        <div className={sidebarOpen}>
           <Button
-            className={sidebarRight}
+            className="sidebarButton"
             icon
             onClick={this.handleSidebar}
             color="black"
           >
-            <Icon name="sidebar" size="big" />
+            <Icon name="sidebar" size="large" />
           </Button>
 
           <Sidebar
@@ -71,9 +71,8 @@ class Header extends Component {
             inverted
             icon="labeled"
             vertical
-            visible={this.state.open}
-            width="thin"
-            direction="right"
+            visible
+            id="menuRight"
           >
             {menus.map((menu) => (
               <Menu.Item

@@ -17,7 +17,7 @@ header {
   justify-content: center;
 }
 
-.menu {
+#menuTop {
   width: 100%;
   z-index: 100;
   font-size: 0.9em !important;
@@ -26,20 +26,40 @@ header {
   background: transparent;
 }
 
-.Sidebar-button {
+.Sidebar {
+  display: none;
+  height: 100%;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  right: -100px;
   z-index: 150;
-  transition: all 0.2s ease-in-out;
 }
 
 .sidebarOpen {
-  transform: translateX(-165px) !important;
+  animation: opened;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-.Sidebar {
-  display: none;
+.sidebarButton {
+  position: relative;
+  margin-right: 20px;
+}
+
+#menuRight {
+  position: relative !important;
+  width: 100px;
+  font-size: 0.8rem;
+}
+
+@keyframes opened {
+  0% {
+    right: -100px;
+  }
+
+  100% {
+    right: 0;
+  }
 }
 
 .banner {
@@ -114,7 +134,8 @@ header {
   }
 
   .Sidebar {
-    display: block;
+    display: inline-flex;
+    align-items: baseline;
   }
 }
 
