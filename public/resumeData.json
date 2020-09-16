@@ -72,44 +72,115 @@
       {
         "name": "Python",
         "icon": "python",
-        "level": "100",
         "color": "blue"
       },
       {
         "name": "Javascript",
         "icon": "js",
-        "level": "90",
         "color": "yellow"
       },
       {
         "name": "Django",
         "icon": "dj",
-        "level": "100",
         "color": "green"
       },
       {
         "name": "React",
         "icon": "react",
-        "level": "95",
-        "color": "violet"
+        "color": "teal"
       },
       {
         "name": "HTML5",
         "icon": "html5",
-        "level": "100",
         "color": "red"
       },
       {
         "name": "CSS3",
-        "icon": "css3",
-        "level": "90",
+        "icon": "css3 alternate",
         "color": "blue"
+      },
+      {
+        "name": "Sass",
+        "icon": "sass",
+        "color": "pink"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "B",
+        "color": "violet"
+      },
+      {
+        "name": "Semantic UI",
+        "icon": "S",
+        "color": "teal"
+      },
+      {
+        "name": "SQL",
+        "icon": "database",
+        "color": "black"
+      },
+      {
+        "name": "SQLite",
+        "icon": "database",
+        "color": "blue"
+      },
+      {
+        "name": "Postgre",
+        "icon": "database",
+        "color": "blue"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "M",
+        "color": "green"
       },
       {
         "name": "Git",
         "icon": "git",
-        "level": "95",
         "color": "grey"
+      },
+      {
+        "name": "Github",
+        "icon": "github",
+        "color": "black",
+        "inverted": "true"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab",
+        "color": "orange"
+      },
+      {
+        "name": "Node",
+        "icon": "node",
+        "color": "green"
+      },
+      {
+        "name": "Express",
+        "icon": "node js",
+        "color": "green"
+      },
+      {
+        "name": "jQuery",
+        "icon": "jQ",
+        "color": "blue"
+      },
+      {
+        "name": "API",
+        "icon": "cog",
+        "color": "black"
+      },
+      {
+        "name": "JSON",
+        "icon": "file code",
+        "color": "black",
+        "inverted": "true"
+      },
+      {
+        "name": "Linux",
+        "icon": "linux",
+        "color": "black",
+        "inverted": "true"
       }
     ]
   },

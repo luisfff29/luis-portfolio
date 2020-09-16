@@ -1,8 +1,48 @@
 import React, { Component } from "react";
-import { Grid, Progress, Icon, Placeholder } from "semantic-ui-react";
+import { Grid, Icon, Placeholder } from "semantic-ui-react";
 import "./Resume.css";
 
 class Resume extends Component {
+  renderSwitch = (icon) => {
+    const skillsWithoutIcon = [
+      "Django",
+      "Bootstrap",
+      "Semantic UI",
+      "MongoDB",
+      "jQuery",
+    ];
+
+    const styleFontFamily = {
+      fontFamily: "'Catamaran', sans-serif",
+      fontWeight: "700",
+    };
+
+    if (skillsWithoutIcon.includes(icon.name)) {
+      return (
+        <Icon
+          color={icon.color}
+          size="big"
+          circular
+          inverted={!icon.inverted}
+          style={styleFontFamily}
+        >
+          {icon.icon}
+        </Icon>
+      );
+    } else {
+      return (
+        <Icon
+          color={icon.color}
+          name={icon.icon}
+          size="big"
+          circular
+          inverted={!icon.inverted}
+          className={icon.inverted ? "BgWhite" : ""}
+        />
+      );
+    }
+  };
+
   render() {
     if (this.props.data && !this.props.loading) {
       var education = this.props.data.education.map((edu) => (
@@ -27,18 +67,18 @@ class Resume extends Component {
         </div>
       ));
 
-      var skills = this.props.data.skills.map((lang) => (
-        <Progress
-          key={lang.name}
-          percent={lang.level}
-          color={lang.color}
-          active
-          inverted
-          progress
+      var skills = this.props.data.skills.map((skill) => (
+        <Grid.Column
+          computer={2}
+          tablet={3}
+          mobile={5}
+          key={skill.name}
+          className="Skill"
         >
-          {lang.icon !== "dj" ? <Icon name={lang.icon} /> : lang.icon}{" "}
-          {lang.name}
-        </Progress>
+          {this.renderSwitch(skill)}
+          <br />
+          {skill.name}
+        </Grid.Column>
       ));
     }
 
@@ -52,6 +92,22 @@ class Resume extends Component {
           </Placeholder.Paragraph>
         ))}
       </Placeholder>
+    );
+
+    var placeholderSkills = (
+      <>
+        {[...Array(16)].map((_, i) => (
+          <Grid.Column key={i} computer={2} tablet={3} mobile={5}>
+            <Placeholder
+              inverted
+              className="lighter"
+              style={{ height: "5rem", width: "5rem" }}
+            >
+              <Placeholder.Image square />
+            </Placeholder>
+          </Grid.Column>
+        ))}
+      </>
     );
 
     return (
@@ -85,7 +141,9 @@ class Resume extends Component {
                 </h4>
               </Grid.Column>
               <Grid.Column width={13}>
-                {this.props.loading ? placeholder : skills}
+                <Grid centered>
+                  {this.props.loading ? placeholderSkills : skills}
+                </Grid>
               </Grid.Column>
             </Grid.Row>
           </Grid>
