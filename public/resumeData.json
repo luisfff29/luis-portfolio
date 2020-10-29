@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Luis Fuentes",
-    "description": "I'm Dallas, Texas based Software Engineer with extensive education in Web Developement. Let's start scrolling and learn more about me",
+    "description": "I'm Dallas, Texas based Software Engineer with extensive education in Web Development. Let's start scrolling and learn more about me",
     "bio": "My name is Luis Fuentes, I'm a Full Stack Web Developer graduated from Kenzie Academy. Currently I'm looking for a job into Software Engineering to get professional experience and develop amazing projects.",
     "email": "luisfff29@gmail.com",
     "phone": "+1 (214) 721-2378",
@@ -44,6 +44,16 @@
     ],
     "work": [
       {
+        "company": "Citi",
+        "position": [
+          {
+            "title": "Operating Sys Analyst Lead",
+            "years": "October 2020 - Current"
+          }
+        ],
+        "description": "Perform 1st level support and escalate issues to Tier II support if unable to resolve through initial triage and troubleshooting that are within the Command Center operating procedures for Latin American countries business environments to ensure all Quality Initiatives and Service Level Agreements were achieved daily."
+      },
+      {
         "company": "Global Asset, LLC",
         "position": [
           {
@@ -58,7 +68,7 @@
         "position": [
           {
             "title": "Overnight Stocker",
-            "years": "April 2016 - Current"
+            "years": "April 2016 - October 2020"
           },
           {
             "title": "Department Manager",
@@ -186,6 +196,26 @@
   },
   "projects": [
     {
+      "title": "Overdrive",
+      "category": "Django",
+      "image": "images/project_overdrive.png",
+      "description": "Overdrive Library is a Python/Django project that recreates an online library's backend. Team project for final Capstone (second semester) at Kenzie Academy",
+      "url": {
+        "website": "https://django-overdrive.com/",
+        "repository": "https://github.com/luisfff29/overdrive-library/"
+      }
+    },
+    {
+      "title": "Kwitter",
+      "category": "React",
+      "image": "images/project_kwitter.png",
+      "description": "Clone of a common micro-blogging platform. Final Capstone Project for the first semester at Kenzie Academy",
+      "url": {
+        "website": "https://kwitter-frontend.herokuapp.com/",
+        "repository": "https://github.com/luisfff29/kwitter-frontend/"
+      }
+    },
+    {
       "title": "KenzieGram",
       "category": "Node.js",
       "image": "images/project_kenziegram.png",
@@ -203,26 +233,6 @@
       "url": {
         "website": "https://signup-form-app.herokuapp.com/",
         "repository": "https://github.com/luisfff29/signup-form/"
-      }
-    },
-    {
-      "title": "Kwitter",
-      "category": "React",
-      "image": "images/project_kwitter.png",
-      "description": "Clone of a common micro-blogging platform. Final Capstone Project for the first semester at Kenzie Academy",
-      "url": {
-        "website": "https://kwitter-frontend.herokuapp.com/",
-        "repository": "https://github.com/luisfff29/kwitter-frontend/"
-      }
-    },
-    {
-      "title": "Overdrive",
-      "category": "Django",
-      "image": "images/project_overdrive.png",
-      "description": "Overdrive Library is a Python/Django project that recreates an online library's backend. Team project for final Capstone (second semester) at Kenzie Academy",
-      "url": {
-        "website": "https://django-overdrive.com/",
-        "repository": "https://github.com/luisfff29/overdrive-library/"
       }
     }
   ]
