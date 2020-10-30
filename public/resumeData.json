@@ -196,6 +196,16 @@
   },
   "projects": [
     {
+      "title": "Twitterclone",
+      "category": "Django",
+      "image": "images/project_twitterclone.png",
+      "description": "Twitter clone project deployed in DigitalOcean with custom domain added.",
+      "url": {
+        "website": "https://django-tweetclone.xyz/",
+        "repository": "https://github.com/luisfff29/twitterclone/"
+      }
+    },
+    {
       "title": "Overdrive",
       "category": "Django",
       "image": "images/project_overdrive.png",
