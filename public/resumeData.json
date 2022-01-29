@@ -201,7 +201,7 @@
       "image": "images/project_twitterclone.png",
       "description": "Twitter clone project deployed in DigitalOcean with custom domain added.",
       "url": {
-        "website": "https://django-tweetclone.xyz/",
+        "website": "",
         "repository": "https://github.com/luisfff29/twitterclone/"
       }
     },
