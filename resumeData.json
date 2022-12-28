@@ -24,6 +24,11 @@
   "resume": {
     "education": [
       {
+        "school": "Southern New Hampshire University",
+        "program": "B.S. Computer Science",
+        "graduation": "October 2024",
+        "description": "Pursuing a bachelor's degree in Computer Science. Expected graduation in October 2024."
+      },{
         "school": "Kenzie Academy",
         "program": "Software Engineering Certification Program",
         "graduation": "August 2020",
@@ -33,18 +38,18 @@
         "school": "My Computer Career",
         "program": "Technical Systems and Security Certification Program",
         "graduation": "June 2019",
-        "description": "Obtained CompTIA certifications such as A+, Server+, Network+, and Security+. And also got MTA Fundamentals certificationes and Linux Essentials."
+        "description": "Obtained CompTIA certifications such as A+, Server+, Network+, and Security+. MTA Fundamentals certificationes and Linux Essentials."
       },
       {
-        "school": "Niño Jesús de Praga",
-        "program": "High School Diploma",
+        "school": "I.E.P. Niño Jesús de Praga",
+        "program": "GED / High School Diploma",
         "graduation": "December 2014",
-        "description": "General Studies in Lima, Perú"
+        "description": "General Education in Lima, Peru"
       }
     ],
     "work": [
       {
-        "company": "Citi",
+        "company": "Citigroup Inc.",
         "position": [
           {
             "title": "Operating Sys Analyst Lead",
@@ -57,14 +62,14 @@
         "company": "Global Asset, LLC",
         "position": [
           {
-            "title": "Associate",
+            "title": "IT Associate",
             "years": "August 2019"
           }
         ],
         "description": "Staffing support helping out campus technicians to assist them installing Chromebooks in Rockwall, TX high schools."
       },
       {
-        "company": "Wal-Mart Stores, Inc.",
+        "company": "Walmart Inc.",
         "position": [
           {
             "title": "Overnight Stocker",
@@ -201,7 +206,7 @@
       "image": "images/project_twitterclone.png",
       "description": "Twitter clone project deployed in DigitalOcean with custom domain added.",
       "url": {
-        "website": "https://django-tweetclone.xyz/",
+        "website": "",
         "repository": "https://github.com/luisfff29/twitterclone/"
       }
     },
