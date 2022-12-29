@@ -49,7 +49,11 @@ class Resume extends Component {
         <div key={edu.school} className="division">
           <h3>{edu.school}</h3>
           <p>
-            <em>{edu.program}</em>&emsp;• {edu.graduation}
+            <em>{edu.program}</em>&emsp;
+            <Icon name="map marker alternate" />
+            {edu.location}&emsp;
+            <Icon name="calendar alternate outline" />
+            {edu.graduation}
           </p>
           <p>{edu.description}</p>
         </div>
@@ -60,7 +64,11 @@ class Resume extends Component {
           <h3>{job.company}</h3>
           {job.position.map((pos) => (
             <p key={pos.title}>
-              <em>{pos.title}</em>&emsp;• {pos.years}
+              <em>{pos.title}</em>&emsp;
+              <Icon name="map marker alternate" />
+              {job.location}&emsp;
+              <Icon name="calendar alternate outline" />
+              {pos.years}
             </p>
           ))}
           <p>{job.description}</p>
