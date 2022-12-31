@@ -1,8 +1,8 @@
 {
   "main": {
     "name": "Luis Fuentes",
-    "description": "I'm Dallas, Texas based Software Engineer with extensive education in Web Development. Let's start scrolling and learn more about me",
-    "bio": "My name is Luis Fuentes, I'm a Full Stack Web Developer graduated from Kenzie Academy. Currently I'm looking for a job into Software Engineering to get professional experience and develop amazing projects.",
+    "description": "I'm a Software Developer based in Dallas, Texas. Enthusiastic about technology and with desired to work in amazing projects. Let's start scrolling and learn more about me.",
+    "bio": "My name is Luis Fuentes. I'm a full stack web developer pursuing a bachelor's degree in Computer Science and looking for a job to extend my experience and gain more skills.I like working in companies where I can prove myself and the opportunity to grow professionlly.",
     "email": "luisfff29@gmail.com",
     "phone": "+1 (214) 721-2378",
     "address": {
@@ -129,8 +129,12 @@
       {
         "name": "Github",
         "icon": "github",
-        "color": "black",
-        "inverted": "true"
+        "color": "black"
+      },
+      {
+        "name": "Microsoft Office",
+        "icon": "file excel",
+        "color": "green"
       },
       {
         "name": "Detail-oriented",
@@ -157,7 +161,7 @@
         "inverted": "true"
       },
       {
-        "name": "Management",
+        "name": "Time management",
         "icon": "clock",
         "color": "green",
         "inverted": "true"
@@ -178,6 +182,30 @@
         "name": "Problem solving",
         "icon": "thumbs up",
         "color": "violet",
+        "inverted": "true"
+      },
+      {
+        "name": "Technical skills",
+        "icon": "desktop",
+        "color": "purple",
+        "inverted": "true"
+      },
+      {
+        "name": "Bilingual",
+        "icon": "language",
+        "color": "pink",
+        "inverted": "true"
+      },
+      {
+        "name": "Typing",
+        "icon": "keyboard",
+        "color": "brown",
+        "inverted": "true"
+      },
+      {
+        "name": "Flexibility",
+        "icon": "sync",
+        "color": "red",
         "inverted": "true"
       }
     ]
