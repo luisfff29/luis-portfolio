@@ -24,7 +24,7 @@ class About extends Component {
                   </Placeholder>
                 ) : (
                   <Image
-                    src="images/profile_picture.png"
+                    src="images/profile_picture.jpg"
                     size="medium"
                     centered
                     circular

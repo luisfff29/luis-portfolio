@@ -27,7 +27,7 @@
         "school": "Southern New Hampshire University",
         "location": "Remote",
         "program": "B.S. Computer Science",
-        "graduation": "October 2024",
+        "graduation": "Expected October 2024",
         "description": "Pursuing a bachelor's degree in Computer Science. Expected graduation in October 2024."
       },{
         "school": "Kenzie Academy",
@@ -122,41 +122,6 @@
         "color": "blue"
       },
       {
-        "name": "Sass",
-        "icon": "sass",
-        "color": "pink"
-      },
-      {
-        "name": "Bootstrap",
-        "icon": "B",
-        "color": "violet"
-      },
-      {
-        "name": "Semantic UI",
-        "icon": "S",
-        "color": "teal"
-      },
-      {
-        "name": "SQL",
-        "icon": "database",
-        "color": "black"
-      },
-      {
-        "name": "SQLite",
-        "icon": "database",
-        "color": "blue"
-      },
-      {
-        "name": "Postgre",
-        "icon": "database",
-        "color": "blue"
-      },
-      {
-        "name": "MongoDB",
-        "icon": "M",
-        "color": "green"
-      },
-      {
         "name": "Git",
         "icon": "git",
         "color": "grey"
@@ -168,40 +133,51 @@
         "inverted": "true"
       },
       {
-        "name": "Gitlab",
-        "icon": "gitlab",
-        "color": "orange"
-      },
-      {
-        "name": "Node",
-        "icon": "node",
-        "color": "green"
-      },
-      {
-        "name": "Express",
-        "icon": "node js",
-        "color": "green"
-      },
-      {
-        "name": "jQuery",
-        "icon": "jQ",
-        "color": "blue"
-      },
-      {
-        "name": "API",
-        "icon": "cog",
-        "color": "black"
-      },
-      {
-        "name": "JSON",
-        "icon": "file code",
-        "color": "black",
+        "name": "Detail-oriented",
+        "icon": "pencil alternate",
+        "color": "red",
         "inverted": "true"
       },
       {
-        "name": "Linux",
-        "icon": "linux",
-        "color": "black",
+        "name": "Teamwork",
+        "icon": "dolly",
+        "color": "orange",
+        "inverted": "true"
+      },
+      {
+        "name": "Creativity",
+        "icon": "lightbulb",
+        "color": "yellow",
+        "inverted": "true"
+      },
+      {
+        "name": "Organization",
+        "icon": "clipboard list",
+        "color": "olive",
+        "inverted": "true"
+      },
+      {
+        "name": "Management",
+        "icon": "clock",
+        "color": "green",
+        "inverted": "true"
+      },
+      {
+        "name": "Adaptability",
+        "icon": "users",
+        "color": "teal",
+        "inverted": "true"
+      },
+      {
+        "name": "Multitasking",
+        "icon": "tasks",
+        "color": "blue",
+        "inverted": "true"
+      },
+      {
+        "name": "Problem solving",
+        "icon": "thumbs up",
+        "color": "violet",
         "inverted": "true"
       }
     ]
