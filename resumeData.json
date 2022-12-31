@@ -25,23 +25,27 @@
     "education": [
       {
         "school": "Southern New Hampshire University",
+        "location": "Remote",
         "program": "B.S. Computer Science",
-        "graduation": "October 2024",
+        "graduation": "Expected October 2024",
         "description": "Pursuing a bachelor's degree in Computer Science. Expected graduation in October 2024."
       },{
         "school": "Kenzie Academy",
+        "location": "Remote",
         "program": "Software Engineering Certification Program",
         "graduation": "August 2020",
         "description": "Graduated with Front-End and Full-Stack Web Development certifications."
       },
       {
         "school": "My Computer Career",
+        "location": "Dallas, Texas",
         "program": "Technical Systems and Security Certification Program",
         "graduation": "June 2019",
         "description": "Obtained CompTIA certifications such as A+, Server+, Network+, and Security+. MTA Fundamentals certificationes and Linux Essentials."
       },
       {
         "school": "I.E.P. Niño Jesús de Praga",
+        "location": "Lima, Peru",
         "program": "GED / High School Diploma",
         "graduation": "December 2014",
         "description": "General Education in Lima, Peru"
@@ -50,6 +54,7 @@
     "work": [
       {
         "company": "Citigroup Inc.",
+        "location": "Irving, Texas",
         "position": [
           {
             "title": "Operating Sys Analyst Lead",
@@ -60,6 +65,7 @@
       },
       {
         "company": "Global Asset, LLC",
+        "location": "Carrollton, Texas",
         "position": [
           {
             "title": "IT Associate",
@@ -70,6 +76,7 @@
       },
       {
         "company": "Walmart Inc.",
+        "location": "Sachse, Texas",
         "position": [
           {
             "title": "Overnight Stocker",
@@ -115,41 +122,6 @@
         "color": "blue"
       },
       {
-        "name": "Sass",
-        "icon": "sass",
-        "color": "pink"
-      },
-      {
-        "name": "Bootstrap",
-        "icon": "B",
-        "color": "violet"
-      },
-      {
-        "name": "Semantic UI",
-        "icon": "S",
-        "color": "teal"
-      },
-      {
-        "name": "SQL",
-        "icon": "database",
-        "color": "black"
-      },
-      {
-        "name": "SQLite",
-        "icon": "database",
-        "color": "blue"
-      },
-      {
-        "name": "Postgre",
-        "icon": "database",
-        "color": "blue"
-      },
-      {
-        "name": "MongoDB",
-        "icon": "M",
-        "color": "green"
-      },
-      {
         "name": "Git",
         "icon": "git",
         "color": "grey"
@@ -161,40 +133,51 @@
         "inverted": "true"
       },
       {
-        "name": "Gitlab",
-        "icon": "gitlab",
-        "color": "orange"
-      },
-      {
-        "name": "Node",
-        "icon": "node",
-        "color": "green"
-      },
-      {
-        "name": "Express",
-        "icon": "node js",
-        "color": "green"
-      },
-      {
-        "name": "jQuery",
-        "icon": "jQ",
-        "color": "blue"
-      },
-      {
-        "name": "API",
-        "icon": "cog",
-        "color": "black"
-      },
-      {
-        "name": "JSON",
-        "icon": "file code",
-        "color": "black",
+        "name": "Detail-oriented",
+        "icon": "pencil alternate",
+        "color": "red",
         "inverted": "true"
       },
       {
-        "name": "Linux",
-        "icon": "linux",
-        "color": "black",
+        "name": "Teamwork",
+        "icon": "dolly",
+        "color": "orange",
+        "inverted": "true"
+      },
+      {
+        "name": "Creativity",
+        "icon": "lightbulb",
+        "color": "yellow",
+        "inverted": "true"
+      },
+      {
+        "name": "Organization",
+        "icon": "clipboard list",
+        "color": "olive",
+        "inverted": "true"
+      },
+      {
+        "name": "Management",
+        "icon": "clock",
+        "color": "green",
+        "inverted": "true"
+      },
+      {
+        "name": "Adaptability",
+        "icon": "users",
+        "color": "teal",
+        "inverted": "true"
+      },
+      {
+        "name": "Multitasking",
+        "icon": "tasks",
+        "color": "blue",
+        "inverted": "true"
+      },
+      {
+        "name": "Problem solving",
+        "icon": "thumbs up",
+        "color": "violet",
         "inverted": "true"
       }
     ]
