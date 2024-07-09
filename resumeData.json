@@ -1,8 +1,8 @@
 {
   "main": {
     "name": "Luis Fuentes",
-    "description": "I'm Dallas, Texas based Software Engineer with extensive education in Web Development. Let's start scrolling and learn more about me",
-    "bio": "My name is Luis Fuentes, I'm a Full Stack Web Developer graduated from Kenzie Academy. Currently I'm looking for a job into Software Engineering to get professional experience and develop amazing projects.",
+    "description": "I am based in Dallas. TX Metroplex area. I have an extensive knowledge in Software Engineering, Web Development, and currently interested in Data Science and Analyst. Let's start scrolling and learn more about me",
+    "bio": "My name is Luis Fuentes, I am a Mainframe Analyst with studies as a Software Engineer and recently graduated from Southern New Hampshire Univesity with a B.S. in Computer Science. Currently I'm looking for a job into Data Science or Data Analyst to get professional experience and develop amazing projects.",
     "email": "luisfff29@gmail.com",
     "phone": "+1 (214) 721-2378",
     "address": {
@@ -27,8 +27,8 @@
         "school": "Southern New Hampshire University",
         "location": "Remote",
         "program": "B.S. Computer Science",
-        "graduation": "Expected October 2024",
-        "description": "Pursuing a bachelor's degree in Computer Science. Expected graduation in October 2024."
+        "graduation": "June 2024",
+        "description": "Bachelor's Degree in Computer Science. Graduated in June 2024."
       },{
         "school": "Kenzie Academy",
         "location": "Remote",
@@ -57,11 +57,11 @@
         "location": "Irving, Texas",
         "position": [
           {
-            "title": "Operating Sys Analyst Lead",
+            "title": "Mainframe Infrastructure Analyst",
             "years": "October 2020 - Current"
           }
         ],
-        "description": "Perform 1st level support and escalate issues to Tier II support if unable to resolve through initial triage and troubleshooting that are within the Command Center operating procedures for Latin American countries business environments to ensure all Quality Initiatives and Service Level Agreements were achieved daily."
+        "description": "Enhanced global IT operations by managing ServiceNow ticketing processes, providing Mainframe console support, facilitating cross-regional communication, monitoring system health via Tivoli Netcool/OMNIbus, maintaining procedural documentation, and successfully training six operators on iSeries systems."
       },
       {
         "company": "Global Asset, LLC",
@@ -199,7 +199,7 @@
       "image": "images/project_overdrive.png",
       "description": "Overdrive Library is a Python/Django project that recreates an online library's backend. Team project for final Capstone (second semester) at Kenzie Academy",
       "url": {
-        "website": "https://django-overdrive.com/",
+        "website": "",
         "repository": "https://github.com/luisfff29/overdrive-library/"
       }
     },
@@ -209,7 +209,7 @@
       "image": "images/project_kwitter.png",
       "description": "Clone of a common micro-blogging platform. Final Capstone Project for the first semester at Kenzie Academy",
       "url": {
-        "website": "https://kwitter-frontend.herokuapp.com/",
+        "website": "",
         "repository": "https://github.com/luisfff29/kwitter-frontend/"
       }
     },
@@ -219,7 +219,7 @@
       "image": "images/project_kenziegram.png",
       "description": "Basic Instagram clone using Node.js, Express.js, Multer, and EJS package",
       "url": {
-        "website": "https://super-kenziegram.herokuapp.com/",
+        "website": "",
         "repository": "https://github.com/luisfff29/super-kenziegram/"
       }
     },
@@ -229,7 +229,7 @@
       "image": "images/project_signup_form.png",
       "description": "Sign up form with Express.js, and EJS package. Server code and Client code written in the same project",
       "url": {
-        "website": "https://signup-form-app.herokuapp.com/",
+        "website": "",
         "repository": "https://github.com/luisfff29/signup-form/"
       }
     }
